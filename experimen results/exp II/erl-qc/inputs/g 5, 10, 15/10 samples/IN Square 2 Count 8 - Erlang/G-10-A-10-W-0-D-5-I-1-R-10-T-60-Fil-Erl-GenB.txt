@@ -1,0 +1,70 @@
+Repeat Index:1
+
+
+Time-out
+
+
+Repeat Index:2
+
+
+Time-out
+
+
+Repeat Index:3
+
+
+Test input:1
+AgentNum=  1; Start( 1, 4); Moves=down ,down ,down ,down ,down 
+AgentNum=  2; Start( 6, 3); Moves=up   ,right,left ,right,up   
+AgentNum=  3; Start( 4, 5); Moves=left ,down ,down ,left ,down 
+AgentNum=  4; Start( 1, 6); Moves=down ,right,right,right,down 
+AgentNum=  5; Start( 1, 6); Moves=down ,up   ,up   ,down ,down 
+AgentNum=  6; Start( 1, 5); Moves=down ,down ,left ,down ,down 
+AgentNum=  7; Start( 0, 3); Moves=right,right,right,right,right
+AgentNum=  8; Start( 1, 8); Moves=right,right,down ,down ,right
+AgentNum=  9; Start( 2, 5); Moves=down ,down ,down ,right,left 
+AgentNum= 10; Start( 2, 4); Moves=right,up   ,up   ,left ,left 
+
+
+Repeat Index:4
+
+
+Time-out
+
+
+Repeat Index:5
+
+
+Time-out
+
+
+Repeat Index:6
+
+
+Time-out
+
+
+Repeat Index:7
+
+
+Time-out
+
+
+Repeat Index:8
+
+
+Time-out
+
+
+Repeat Index:9
+
+
+Time-out
+
+
+Repeat Index:10
+
+
+Time-out
+
+

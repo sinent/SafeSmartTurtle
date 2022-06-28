@@ -1,0 +1,17 @@
+All Times:
+Test Set  1:     11
+Test Set  2:     30
+Test Set  3:      7
+Test Set  4:     40
+Test Set  5:      4
+Test Set  6:      6
+Test Set  7:      8
+Test Set  8:     20
+Test Set  9:     22
+Test Set 10:     38
+
+Statistics:
+Total               :    186
+Average             :     18
+Average (no Min/Max):     17
+Median              :     15

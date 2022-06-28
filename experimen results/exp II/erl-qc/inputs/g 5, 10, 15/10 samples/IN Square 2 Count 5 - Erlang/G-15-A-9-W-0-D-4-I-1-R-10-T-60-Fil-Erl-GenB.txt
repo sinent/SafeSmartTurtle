@@ -1,0 +1,17 @@
+All Times:
+Test Set  1:    468
+Test Set  2:    226
+Test Set  3:   4651
+Test Set  4:   3743
+Test Set  5:   2174
+Test Set  6:   1689
+Test Set  7:   7308
+Test Set  8:   7578
+Test Set  9:   3503
+Test Set 10:  12587
+
+Statistics:
+Total               :  43927
+Average             :   4392
+Average (no Min/Max):   3889
+Median              :   3623

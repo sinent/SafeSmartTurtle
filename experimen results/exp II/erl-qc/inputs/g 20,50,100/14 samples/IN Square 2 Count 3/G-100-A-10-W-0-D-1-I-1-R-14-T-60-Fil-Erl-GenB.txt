@@ -1,0 +1,94 @@
+Repeat Index:1
+
+
+Time-out
+
+
+Repeat Index:2
+
+
+Time-out
+
+
+Repeat Index:3
+
+
+Time-out
+
+
+Repeat Index:4
+
+
+Time-out
+
+
+Repeat Index:5
+
+
+Time-out
+
+
+Repeat Index:6
+
+
+Time-out
+
+
+Repeat Index:7
+
+
+Time-out
+
+
+Repeat Index:8
+
+
+Time-out
+
+
+Repeat Index:9
+
+
+Time-out
+
+
+Repeat Index:10
+
+
+Time-out
+
+
+Repeat Index:11
+
+
+Time-out
+
+
+Repeat Index:12
+
+
+Time-out
+
+
+Repeat Index:13
+
+
+Test input:1
+AgentNum=  1; Start(13,57); Moves=down 
+AgentNum=  2; Start(82,71); Moves=down 
+AgentNum=  3; Start(71,15); Moves=left 
+AgentNum=  4; Start(17,17); Moves=down 
+AgentNum=  5; Start(16,15); Moves=up   
+AgentNum=  6; Start(16,15); Moves=left 
+AgentNum=  7; Start(49,90); Moves=down 
+AgentNum=  8; Start(78,21); Moves=right
+AgentNum=  9; Start(29,38); Moves=right
+AgentNum= 10; Start(67, 8); Moves=up   
+
+
+Repeat Index:14
+
+
+Time-out
+
+

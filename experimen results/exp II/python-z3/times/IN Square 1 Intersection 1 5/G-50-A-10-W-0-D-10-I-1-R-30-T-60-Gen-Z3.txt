@@ -1,0 +1,38 @@
+All Times:
+Test Set  1:   1680
+Test Set  2:   1310
+Test Set  3:   1340
+Test Set  4:   1445
+Test Set  5:   1752
+Test Set  6:   2196
+Test Set  7:   1698
+Test Set  8:   1559
+Test Set  9:   1342
+Test Set 10:   1641
+Test Set 11:   2988
+Test Set 12:    956
+Test Set 13:   1284
+Test Set 14:   1458
+Test Set 15:   1335
+Test Set 16:   1527
+Test Set 17:   2208
+Test Set 18:   1623
+Test Set 19:   1272
+Test Set 20:   2020
+Test Set 21:   1847
+Test Set 22:   5047
+Test Set 23:   1610
+Test Set 24:   1732
+Test Set 25:   1194
+Test Set 26:   2022
+Test Set 27:   1770
+Test Set 28:   1488
+Test Set 29:   1331
+Test Set 30:   2676
+
+Statistics:
+Total               :  53351
+Average             :   1778
+Average (no Min/Max):   1691
+Median              :   1616
+

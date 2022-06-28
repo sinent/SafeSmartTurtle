@@ -1,0 +1,9 @@
+                 #Turtle=5       
+ Grid=50*50      1              
+ Grid=50*50      2              
+ Grid=50*50      4              
+ Grid=50*50      4              
+ Grid=50*50      4              
+ Grid=50*50      7              
+ Grid=50*50      29             
+

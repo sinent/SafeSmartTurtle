@@ -1,0 +1,38 @@
+All Times:
+Test Set  1:     30
+Test Set  2:     28
+Test Set  3:     31
+Test Set  4:     28
+Test Set  5:     29
+Test Set  6:     27
+Test Set  7:     31
+Test Set  8:     30
+Test Set  9:     29
+Test Set 10:     31
+Test Set 11:     29
+Test Set 12:     27
+Test Set 13:     32
+Test Set 14:     28
+Test Set 15:     31
+Test Set 16:     30
+Test Set 17:     33
+Test Set 18:     29
+Test Set 19:     33
+Test Set 20:     30
+Test Set 21:     31
+Test Set 22:     28
+Test Set 23:     30
+Test Set 24:     33
+Test Set 25:     32
+Test Set 26:     28
+Test Set 27:     30
+Test Set 28:     30
+Test Set 29:     32
+Test Set 30:     32
+
+Statistics:
+Total               :    902
+Average             :     30
+Average (no Min/Max):     30
+Median              :     30
+

@@ -1,0 +1,9 @@
+All Times:
+Test Set  1:    589
+
+Statistics:
+Total               :    589
+Average             :    589
+Average (no Min/Max):    ---
+Median              :    589
+

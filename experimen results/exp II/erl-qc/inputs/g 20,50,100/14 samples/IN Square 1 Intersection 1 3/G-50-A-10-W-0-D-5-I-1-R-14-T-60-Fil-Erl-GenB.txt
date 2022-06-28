@@ -1,0 +1,114 @@
+Repeat Index:1
+
+
+Time-out
+
+
+Repeat Index:2
+
+
+Time-out
+
+
+Repeat Index:3
+
+
+Time-out
+
+
+Repeat Index:4
+
+
+Time-out
+
+
+Repeat Index:5
+
+
+Time-out
+
+
+Repeat Index:6
+
+
+Time-out
+
+
+Repeat Index:7
+
+
+Time-out
+
+
+Repeat Index:8
+
+
+Time-out
+
+
+Repeat Index:9
+
+
+Test input:1
+AgentNum=  1; Start( 8,48); Moves=left ,down ,left ,left ,up   
+AgentNum=  2; Start(24,40); Moves=down ,left ,left ,down ,down 
+AgentNum=  3; Start(13,27); Moves=right,right,right,right,right
+AgentNum=  4; Start(18,26); Moves=left ,left ,down ,left ,down 
+AgentNum=  5; Start(23,39); Moves=right,up   ,right,down ,right
+AgentNum=  6; Start(43,34); Moves=left ,left ,left ,left ,up   
+AgentNum=  7; Start(27,32); Moves=left ,left ,up   ,up   ,up   
+AgentNum=  8; Start(43,22); Moves=up   ,up   ,right,right,up   
+AgentNum=  9; Start(19,39); Moves=right,right,right,right,up   
+AgentNum= 10; Start(32,25); Moves=right,right,right,right,right
+
+
+Repeat Index:10
+
+
+Time-out
+
+
+Repeat Index:11
+
+
+Test input:1
+AgentNum=  1; Start(30,23); Moves=left ,left ,up   ,up   ,left 
+AgentNum=  2; Start(18, 7); Moves=right,up   ,right,right,up   
+AgentNum=  3; Start(26,21); Moves=down ,down ,right,down ,right
+AgentNum=  4; Start(20,10); Moves=right,down ,down ,down ,down 
+AgentNum=  5; Start(22,18); Moves=left ,right,down ,left ,down 
+AgentNum=  6; Start(16,29); Moves=left ,down ,down ,left ,down 
+AgentNum=  7; Start(42,49); Moves=up   ,up   ,left ,down ,up   
+AgentNum=  8; Start( 9,38); Moves=right,right,down ,down ,right
+AgentNum=  9; Start(21, 7); Moves=up   ,down ,up   ,right,up   
+AgentNum= 10; Start(25,40); Moves=right,right,right,right,right
+
+
+Repeat Index:12
+
+
+Time-out
+
+
+Repeat Index:13
+
+
+Test input:1
+AgentNum=  1; Start(20,26); Moves=right,right,right,down ,down 
+AgentNum=  2; Start(47, 1); Moves=right,right,left ,right,down 
+AgentNum=  3; Start(42,37); Moves=right,up   ,up   ,right,right
+AgentNum=  4; Start(47, 0); Moves=up   ,up   ,up   ,left ,left 
+AgentNum=  5; Start(47, 1); Moves=down ,right,up   ,down ,down 
+AgentNum=  6; Start(11, 5); Moves=up   ,left ,left ,left ,left 
+AgentNum=  7; Start(18,17); Moves=down ,right,right,right,down 
+AgentNum=  8; Start(25, 6); Moves=left ,left ,down ,left ,down 
+AgentNum=  9; Start(39,16); Moves=right,right,down ,down ,right
+AgentNum= 10; Start(31,29); Moves=up   ,left ,left ,left ,left 
+
+
+Repeat Index:14
+
+
+Time-out
+
+

@@ -1,0 +1,260 @@
+Repeat Index:1
+
+
+Test input:1
+AgentNum=  1; Start(16, 0); Moves=left ,left ,left ,right,left ,left ,left ,left ,left ,left 
+AgentNum=  2; Start( 0, 6); Moves=right,left ,right,right,left ,down ,left ,down ,down ,up   
+AgentNum=  3; Start(14, 2); Moves=down ,up   ,right,left ,right,left ,down ,left ,up   ,right
+AgentNum=  4; Start(11, 5); Moves=down ,right,right,right,right,down ,down ,down ,right,up   
+AgentNum=  5; Start(15,19); Moves=down ,down ,down ,down ,right,down ,right,down ,down ,down 
+AgentNum=  6; Start(13, 4); Moves=up   ,up   ,right,right,right,up   ,right,up   ,up   ,up   
+AgentNum=  7; Start( 6,14); Moves=right,left ,down ,down ,down ,down ,down ,down ,down ,down 
+AgentNum=  8; Start( 9,18); Moves=down ,down ,down ,right,right,down ,right,right,right,right
+AgentNum=  9; Start( 0, 4); Moves=down ,left ,up   ,up   ,right,right,up   ,up   ,right,up   
+AgentNum= 10; Start( 5,11); Moves=down ,down ,down ,down ,right,down ,down ,down ,down ,down 
+AgentNum= 11; Start( 3, 1); Moves=right,up   ,up   ,right,up   ,up   ,up   ,up   ,right,up   
+AgentNum= 12; Start(18,13); Moves=down ,right,down ,up   ,left ,right,up   ,left ,up   ,right
+AgentNum= 13; Start(18, 8); Moves=left ,right,up   ,right,up   ,right,up   ,up   ,right,left 
+AgentNum= 14; Start( 1, 8); Moves=right,down ,right,right,right,right,right,left ,right,down 
+AgentNum= 15; Start( 6, 9); Moves=down ,left ,left ,down ,down ,down ,left ,left ,left ,down 
+AgentNum= 16; Start(12,18); Moves=up   ,right,right,up   ,right,down ,left ,left ,right,up   
+AgentNum= 17; Start(17,16); Moves=left ,left ,down ,down ,down ,down ,down ,down ,down ,down 
+AgentNum= 18; Start( 7, 6); Moves=down ,right,down ,down ,right,down ,right,right,right,down 
+AgentNum= 19; Start( 9,14); Moves=down ,right,down ,down ,right,down ,down ,down ,right,right
+AgentNum= 20; Start(14,20); Moves=left ,left ,left ,left ,left ,left ,right,left ,left ,left 
+
+
+Repeat Index:2
+
+
+Test input:1
+AgentNum=  1; Start(10, 0); Moves=down ,left ,left ,up   ,down ,up   ,down ,left ,left ,left 
+AgentNum=  2; Start(13, 3); Moves=right,right,right,down ,down ,left ,right,left ,left ,down 
+AgentNum=  3; Start( 6, 3); Moves=up   ,left ,up   ,left ,up   ,left ,down ,left ,left ,left 
+AgentNum=  4; Start(13, 9); Moves=right,down ,right,up   ,right,down ,right,right,down ,right
+AgentNum=  5; Start(15, 2); Moves=up   ,up   ,up   ,up   ,up   ,left ,up   ,up   ,up   ,up   
+AgentNum=  6; Start( 6,13); Moves=up   ,left ,up   ,left ,up   ,left ,left ,up   ,up   ,up   
+AgentNum=  7; Start( 1, 4); Moves=down ,right,up   ,up   ,left ,up   ,up   ,left ,left ,right
+AgentNum=  8; Start( 7, 0); Moves=left ,left ,left ,left ,left ,left ,left ,up   ,down ,left 
+AgentNum=  9; Start( 9,14); Moves=down ,down ,down ,left ,down ,down ,left ,left ,left ,down 
+AgentNum= 10; Start(10, 7); Moves=up   ,right,right,up   ,left ,down ,right,down ,up   ,up   
+AgentNum= 11; Start(14, 1); Moves=right,right,right,right,right,right,right,left ,right,up   
+AgentNum= 12; Start(13, 6); Moves=right,up   ,right,up   ,right,up   ,down ,right,right,left 
+AgentNum= 13; Start(14, 8); Moves=right,down ,down ,down ,down ,down ,right,down ,right,right
+AgentNum= 14; Start(15,12); Moves=right,right,up   ,right,up   ,up   ,right,up   ,up   ,up   
+AgentNum= 15; Start( 1,14); Moves=up   ,right,up   ,right,up   ,right,up   ,up   ,up   ,right
+AgentNum= 16; Start(14, 7); Moves=left ,down ,left ,left ,left ,left ,left ,up   ,left ,down 
+AgentNum= 17; Start( 4,11); Moves=right,up   ,right,right,right,right,right,right,up   ,up   
+AgentNum= 18; Start( 0, 4); Moves=up   ,up   ,up   ,up   ,up   ,up   ,up   ,up   ,up   ,up   
+AgentNum= 19; Start( 6, 5); Moves=down ,right,right,down ,right,right,down ,right,right,right
+AgentNum= 20; Start( 4,15); Moves=right,up   ,up   ,right,up   ,up   ,right,right,right,right
+
+
+Repeat Index:3
+
+
+Test input:1
+AgentNum=  1; Start(14,14); Moves=right,down ,right,down ,down ,right,down ,right,right,right
+AgentNum=  2; Start(20,16); Moves=left ,left ,up   ,left ,left ,up   ,left ,up   ,up   ,down 
+AgentNum=  3; Start( 6,14); Moves=left ,up   ,up   ,left ,left ,up   ,left ,up   ,up   ,left 
+AgentNum=  4; Start(17, 7); Moves=up   ,up   ,up   ,up   ,up   ,left ,up   ,up   ,up   ,up   
+AgentNum=  5; Start(19, 1); Moves=right,down ,down ,right,left ,up   ,down ,up   ,right,left 
+AgentNum=  6; Start(11, 9); Moves=up   ,right,up   ,up   ,left ,right,down ,up   ,down ,up   
+AgentNum=  7; Start( 0,11); Moves=down ,right,down ,down ,right,left ,right,left ,left ,down 
+AgentNum=  8; Start( 9,11); Moves=left ,left ,left ,down ,left ,left ,down ,down ,left ,left 
+AgentNum=  9; Start( 8,14); Moves=down ,up   ,up   ,right,up   ,up   ,right,up   ,right,right
+AgentNum= 10; Start( 1,18); Moves=up   ,up   ,left ,down ,left ,up   ,down ,up   ,right,right
+AgentNum= 11; Start(17, 6); Moves=down ,right,right,down ,up   ,down ,up   ,up   ,right,down 
+AgentNum= 12; Start( 5,18); Moves=right,right,right,up   ,right,right,right,right,up   ,right
+AgentNum= 13; Start( 2,20); Moves=down ,down ,down ,down ,down ,down ,down ,right,right,down 
+AgentNum= 14; Start( 3, 8); Moves=left ,up   ,left ,left ,left ,up   ,left ,right,right,left 
+AgentNum= 15; Start(20, 9); Moves=up   ,up   ,up   ,up   ,left ,up   ,up   ,right,up   ,up   
+AgentNum= 16; Start(15,12); Moves=left ,left ,left ,down ,left ,left ,left ,down ,down ,down 
+AgentNum= 17; Start( 7,18); Moves=down ,down ,right,right,down ,down ,right,down ,right,right
+AgentNum= 18; Start(20, 7); Moves=down ,left ,left ,right,down ,right,left ,left ,right,right
+AgentNum= 19; Start( 7, 3); Moves=down ,left ,left ,right,left ,down ,left ,down ,up   ,down 
+AgentNum= 20; Start(15, 0); Moves=up   ,right,down ,right,up   ,up   ,right,up   ,up   ,up   
+
+
+Repeat Index:4
+
+
+Test input:1
+AgentNum=  1; Start( 6, 2); Moves=up   ,up   ,left ,left ,up   ,left ,up   ,left ,left ,up   
+AgentNum=  2; Start(16,10); Moves=right,right,down ,down ,down ,down ,down ,right,left ,down 
+AgentNum=  3; Start( 9,15); Moves=left ,left ,down ,left ,left ,down ,left ,left ,down ,down 
+AgentNum=  4; Start( 5, 4); Moves=up   ,left ,up   ,up   ,left ,left ,up   ,left ,up   ,up   
+AgentNum=  5; Start(18,10); Moves=down ,left ,left ,left ,down ,left ,left ,left ,left ,left 
+AgentNum=  6; Start(20, 0); Moves=left ,left ,up   ,left ,left ,up   ,left ,up   ,up   ,up   
+AgentNum=  7; Start( 3, 0); Moves=up   ,up   ,right,up   ,right,right,right,up   ,right,up   
+AgentNum=  8; Start(15, 7); Moves=up   ,up   ,up   ,right,down ,up   ,right,up   ,up   ,right
+AgentNum=  9; Start(19,10); Moves=down ,down ,down ,right,down ,down ,left ,left ,down ,right
+AgentNum= 10; Start(10,18); Moves=left ,right,up   ,up   ,left ,right,up   ,right,left ,right
+AgentNum= 11; Start(16, 9); Moves=left ,left ,left ,left ,up   ,up   ,up   ,left ,left ,left 
+AgentNum= 12; Start( 6, 6); Moves=right,down ,down ,down ,right,right,right,down ,down ,down 
+AgentNum= 13; Start(15, 5); Moves=left ,left ,left ,left ,down ,down ,down ,left ,left ,left 
+AgentNum= 14; Start(14,13); Moves=left ,up   ,down ,up   ,up   ,right,right,left ,up   ,up   
+AgentNum= 15; Start( 2, 2); Moves=down ,left ,down ,right,down ,down ,left ,left ,up   ,up   
+AgentNum= 16; Start(14,13); Moves=right,left ,up   ,right,right,right,down ,right,up   ,down 
+AgentNum= 17; Start( 7,14); Moves=right,right,right,right,up   ,up   ,down ,right,right,left 
+AgentNum= 18; Start(16,17); Moves=down ,down ,down ,right,down ,down ,down ,down ,down ,down 
+AgentNum= 19; Start(17, 3); Moves=right,left ,up   ,left ,up   ,up   ,left ,left ,up   ,up   
+AgentNum= 20; Start( 3, 5); Moves=left ,right,left ,up   ,left ,up   ,up   ,left ,up   ,up   
+
+
+Repeat Index:5
+
+
+Test input:1
+AgentNum=  1; Start(16, 2); Moves=down ,up   ,left ,left ,down ,left ,up   ,left ,left ,left 
+AgentNum=  2; Start(19, 3); Moves=up   ,right,up   ,up   ,up   ,right,up   ,up   ,down ,up   
+AgentNum=  3; Start( 3, 3); Moves=right,right,down ,right,right,down ,right,right,right,right
+AgentNum=  4; Start( 5,18); Moves=down ,left ,right,down ,up   ,down ,up   ,down ,down ,down 
+AgentNum=  5; Start( 7, 4); Moves=left ,left ,down ,left ,left ,down ,right,left ,down ,down 
+AgentNum=  6; Start(12, 6); Moves=right,right,down ,right,right,right,down ,right,down ,down 
+AgentNum=  7; Start( 4, 3); Moves=right,right,up   ,right,right,right,right,right,right,right
+AgentNum=  8; Start(15,11); Moves=down ,down ,down ,right,down ,down ,right,down ,right,right
+AgentNum=  9; Start(14, 2); Moves=left ,left ,right,left ,left ,left ,left ,left ,left ,right
+AgentNum= 10; Start(18,11); Moves=up   ,left ,up   ,down ,up   ,left ,left ,left ,up   ,left 
+AgentNum= 11; Start(16, 3); Moves=left ,left ,left ,right,down ,down ,right,left ,left ,right
+AgentNum= 12; Start( 4, 2); Moves=up   ,left ,left ,up   ,left ,left ,up   ,left ,up   ,right
+AgentNum= 13; Start( 7,14); Moves=up   ,left ,up   ,left ,up   ,left ,up   ,up   ,left ,up   
+AgentNum= 14; Start( 4, 2); Moves=left ,right,right,left ,left ,down ,left ,left ,down ,left 
+AgentNum= 15; Start(13, 0); Moves=up   ,up   ,down ,up   ,up   ,right,right,right,up   ,up   
+AgentNum= 16; Start(14, 6); Moves=up   ,left ,up   ,up   ,up   ,up   ,up   ,up   ,left ,left 
+AgentNum= 17; Start(15, 2); Moves=left ,down ,left ,up   ,up   ,left ,up   ,up   ,up   ,right
+AgentNum= 18; Start( 6, 0); Moves=up   ,up   ,right,right,up   ,up   ,up   ,right,up   ,up   
+AgentNum= 19; Start(17,17); Moves=down ,down ,down ,right,left ,right,down ,right,down ,right
+AgentNum= 20; Start(18,15); Moves=left ,down ,up   ,up   ,left ,up   ,right,up   ,up   ,up   
+
+
+Repeat Index:6
+
+
+Test input:1
+AgentNum=  1; Start( 8, 7); Moves=down ,down ,left ,down ,down ,right,down ,right,right,down 
+AgentNum=  2; Start( 4,11); Moves=right,down ,down ,right,down ,down ,right,down ,down ,right
+AgentNum=  3; Start( 5, 6); Moves=right,left ,down ,down ,right,down ,right,down ,right,down 
+AgentNum=  4; Start( 8, 3); Moves=right,down ,down ,right,right,right,right,right,down ,right
+AgentNum=  5; Start(18, 9); Moves=left ,left ,down ,left ,left ,left ,left ,left ,down ,left 
+AgentNum=  6; Start(20,12); Moves=up   ,left ,down ,up   ,up   ,up   ,up   ,up   ,down ,down 
+AgentNum=  7; Start(17, 5); Moves=down ,up   ,right,left ,down ,right,right,down ,down ,right
+AgentNum=  8; Start(16,20); Moves=right,left ,down ,right,up   ,right,right,right,right,left 
+AgentNum=  9; Start( 6,14); Moves=down ,down ,left ,down ,down ,up   ,down ,down ,up   ,left 
+AgentNum= 10; Start( 7, 8); Moves=up   ,up   ,up   ,up   ,up   ,left ,up   ,up   ,left ,up   
+AgentNum= 11; Start( 8,11); Moves=left ,left ,right,up   ,left ,right,right,up   ,right,right
+AgentNum= 12; Start( 8,17); Moves=up   ,left ,left ,left ,up   ,left ,left ,up   ,left ,left 
+AgentNum= 13; Start(16, 5); Moves=left ,up   ,up   ,up   ,right,right,right,down ,down ,down 
+AgentNum= 14; Start( 5, 6); Moves=right,right,right,up   ,right,up   ,right,right,up   ,right
+AgentNum= 15; Start( 8, 5); Moves=left ,down ,right,up   ,left ,right,up   ,left ,down ,left 
+AgentNum= 16; Start(15, 8); Moves=right,right,up   ,up   ,up   ,right,up   ,right,right,up   
+AgentNum= 17; Start( 6,15); Moves=down ,down ,down ,left ,down ,down ,left ,down ,left ,down 
+AgentNum= 18; Start(13,12); Moves=down ,down ,down ,down ,down ,left ,down ,left ,left ,left 
+AgentNum= 19; Start( 0, 8); Moves=right,right,right,right,up   ,right,right,right,right,right
+AgentNum= 20; Start( 6,16); Moves=left ,left ,left ,down ,left ,left ,down ,down ,left ,left 
+
+
+Repeat Index:7
+
+
+Test input:1
+AgentNum=  1; Start( 6, 3); Moves=right,left ,right,down ,right,down ,down ,right,right,down 
+AgentNum=  2; Start( 5,15); Moves=up   ,left ,up   ,up   ,left ,up   ,left ,down ,up   ,left 
+AgentNum=  3; Start( 5, 9); Moves=left ,up   ,left ,down ,down ,up   ,left ,left ,down ,left 
+AgentNum=  4; Start( 3,14); Moves=right,right,right,down ,left ,down ,down ,left ,down ,left 
+AgentNum=  5; Start(16, 8); Moves=down ,down ,down ,right,down ,down ,down ,right,right,right
+AgentNum=  6; Start( 3, 9); Moves=down ,right,right,down ,right,right,down ,down ,right,down 
+AgentNum=  7; Start( 2, 1); Moves=up   ,up   ,up   ,up   ,up   ,up   ,up   ,up   ,left ,up   
+AgentNum=  8; Start(17,11); Moves=left ,up   ,left ,up   ,up   ,up   ,up   ,up   ,up   ,up   
+AgentNum=  9; Start( 3, 9); Moves=right,right,right,right,down ,right,down ,right,right,down 
+AgentNum= 10; Start(12,18); Moves=down ,down ,down ,left ,down ,down ,right,down ,right,down 
+AgentNum= 11; Start(10,16); Moves=down ,down ,right,down ,left ,left ,up   ,right,right,down 
+AgentNum= 12; Start(16, 3); Moves=down ,left ,left ,left ,left ,down ,left ,down ,left ,left 
+AgentNum= 13; Start( 4, 1); Moves=left ,up   ,left ,left ,up   ,up   ,up   ,up   ,left ,up   
+AgentNum= 14; Start( 2, 9); Moves=up   ,left ,left ,up   ,left ,up   ,right,up   ,up   ,up   
+AgentNum= 15; Start(20, 1); Moves=up   ,right,left ,left ,left ,right,down ,left ,right,up   
+AgentNum= 16; Start( 8,18); Moves=left ,left ,left ,down ,down ,left ,up   ,down ,right,down 
+AgentNum= 17; Start( 5, 5); Moves=right,down ,right,down ,down ,right,right,down ,right,right
+AgentNum= 18; Start( 0,14); Moves=down ,down ,down ,left ,down ,down ,down ,down ,down ,down 
+AgentNum= 19; Start(12, 2); Moves=right,right,right,up   ,down ,right,right,right,right,right
+AgentNum= 20; Start(13, 4); Moves=right,right,right,down ,left ,up   ,right,left ,right,left 
+
+
+Repeat Index:8
+
+
+Test input:1
+AgentNum=  1; Start(11,15); Moves=right,right,right,up   ,right,right,right,right,up   ,right
+AgentNum=  2; Start(15,17); Moves=left ,down ,up   ,up   ,down ,left ,up   ,up   ,left ,up   
+AgentNum=  3; Start(11,17); Moves=down ,up   ,up   ,up   ,left ,left ,left ,right,up   ,right
+AgentNum=  4; Start(14,17); Moves=down ,down ,down ,down ,down ,down ,down ,down ,right,down 
+AgentNum=  5; Start(12,10); Moves=up   ,down ,down ,left ,left ,down ,down ,right,up   ,up   
+AgentNum=  6; Start( 5, 1); Moves=up   ,right,right,right,left ,down ,down ,right,left ,left 
+AgentNum=  7; Start(17, 8); Moves=left ,down ,down ,down ,down ,left ,down ,left ,left ,down 
+AgentNum=  8; Start( 0, 1); Moves=up   ,right,right,right,up   ,right,right,up   ,up   ,up   
+AgentNum=  9; Start( 4, 0); Moves=right,up   ,right,right,right,up   ,right,down ,down ,left 
+AgentNum= 10; Start(14, 7); Moves=up   ,up   ,up   ,right,right,up   ,right,up   ,right,right
+AgentNum= 11; Start( 7,11); Moves=left ,down ,down ,left ,down ,left ,down ,down ,down ,left 
+AgentNum= 12; Start(16, 4); Moves=up   ,up   ,down ,right,up   ,left ,up   ,right,up   ,up   
+AgentNum= 13; Start(17, 2); Moves=left ,left ,left ,left ,left ,right,left ,down ,down ,left 
+AgentNum= 14; Start( 5, 9); Moves=down ,down ,right,right,right,right,down ,right,down ,down 
+AgentNum= 15; Start(10,17); Moves=right,right,right,right,right,down ,right,right,up   ,up   
+AgentNum= 16; Start(12, 7); Moves=down ,left ,down ,down ,down ,left ,left ,down ,down ,left 
+AgentNum= 17; Start(17, 5); Moves=down ,right,down ,right,up   ,right,down ,down ,down ,down 
+AgentNum= 18; Start(11,11); Moves=up   ,down ,down ,down ,down ,down ,down ,down ,down ,up   
+AgentNum= 19; Start(20, 1); Moves=left ,left ,down ,up   ,left ,down ,down ,left ,left ,left 
+AgentNum= 20; Start(14,13); Moves=down ,down ,right,down ,left ,down ,left ,left ,down ,down 
+
+
+Repeat Index:9
+
+
+Test input:1
+AgentNum=  1; Start(18,13); Moves=right,down ,up   ,left ,up   ,left ,down ,right,right,down 
+AgentNum=  2; Start( 8,17); Moves=down ,down ,left ,left ,down ,down ,down ,down ,down ,down 
+AgentNum=  3; Start( 0, 9); Moves=up   ,down ,down ,down ,left ,down ,right,down ,down ,down 
+AgentNum=  4; Start( 7, 9); Moves=left ,up   ,left ,left ,left ,left ,up   ,up   ,left ,left 
+AgentNum=  5; Start( 8, 4); Moves=right,up   ,up   ,left ,left ,right,up   ,down ,up   ,up   
+AgentNum=  6; Start( 1, 4); Moves=down ,down ,up   ,right,right,left ,down ,left ,down ,left 
+AgentNum=  7; Start(20, 2); Moves=up   ,right,up   ,down ,down ,down ,down ,right,left ,left 
+AgentNum=  8; Start(10, 2); Moves=right,left ,right,right,right,right,right,right,right,right
+AgentNum=  9; Start( 7,15); Moves=down ,down ,down ,left ,left ,left ,left ,left ,left ,down 
+AgentNum= 10; Start( 4, 2); Moves=left ,right,up   ,right,right,down ,down ,left ,down ,right
+AgentNum= 11; Start(18, 7); Moves=down ,down ,down ,down ,down ,up   ,right,down ,down ,right
+AgentNum= 12; Start(12, 3); Moves=right,right,down ,right,right,right,right,down ,down ,right
+AgentNum= 13; Start(13,19); Moves=right,right,right,down ,down ,right,down ,right,down ,down 
+AgentNum= 14; Start( 5,18); Moves=down ,up   ,up   ,right,right,right,right,right,up   ,right
+AgentNum= 15; Start( 8, 7); Moves=down ,down ,up   ,down ,down ,down ,down ,down ,down ,down 
+AgentNum= 16; Start(18, 8); Moves=left ,down ,left ,left ,down ,left ,left ,left ,left ,down 
+AgentNum= 17; Start(19,18); Moves=down ,left ,left ,left ,right,left ,up   ,left ,left ,up   
+AgentNum= 18; Start(18, 8); Moves=down ,left ,left ,down ,down ,left ,left ,left ,down ,left 
+AgentNum= 19; Start(10, 5); Moves=right,down ,down ,up   ,down ,right,down ,down ,down ,left 
+AgentNum= 20; Start( 2,17); Moves=left ,right,right,left ,right,left ,left ,right,right,right
+
+
+Repeat Index:10
+
+
+Test input:1
+AgentNum=  1; Start(18, 9); Moves=left ,left ,left ,down ,left ,left ,down ,left ,left ,left 
+AgentNum=  2; Start( 4,10); Moves=up   ,left ,up   ,left ,up   ,up   ,up   ,up   ,left ,up   
+AgentNum=  3; Start( 0, 2); Moves=down ,right,down ,up   ,up   ,down ,left ,right,left ,down 
+AgentNum=  4; Start( 4,12); Moves=down ,down ,right,down ,down ,down ,up   ,right,left ,up   
+AgentNum=  5; Start(12,12); Moves=down ,down ,right,down ,right,up   ,right,right,down ,down 
+AgentNum=  6; Start(15,14); Moves=down ,up   ,up   ,up   ,up   ,up   ,up   ,up   ,down ,up   
+AgentNum=  7; Start( 5, 9); Moves=down ,left ,right,down ,left ,left ,down ,right,right,right
+AgentNum=  8; Start( 8, 9); Moves=left ,right,down ,left ,left ,left ,up   ,down ,left ,left 
+AgentNum=  9; Start( 0,18); Moves=up   ,down ,up   ,up   ,left ,up   ,down ,right,left ,right
+AgentNum= 10; Start(11, 0); Moves=right,left ,left ,left ,left ,left ,right,left ,left ,left 
+AgentNum= 11; Start( 2, 3); Moves=down ,up   ,down ,down ,down ,left ,down ,up   ,down ,left 
+AgentNum= 12; Start(11, 0); Moves=left ,left ,left ,left ,left ,left ,left ,left ,left ,left 
+AgentNum= 13; Start( 2, 1); Moves=right,down ,right,down ,right,right,right,right,right,right
+AgentNum= 14; Start( 7, 4); Moves=down ,down ,left ,left ,down ,up   ,down ,left ,left ,down 
+AgentNum= 15; Start( 4, 7); Moves=right,right,right,right,down ,right,right,right,right,down 
+AgentNum= 16; Start( 3,10); Moves=up   ,up   ,left ,up   ,up   ,left ,up   ,up   ,up   ,up   
+AgentNum= 17; Start( 6,18); Moves=up   ,down ,left ,up   ,up   ,down ,down ,down ,down ,down 
+AgentNum= 18; Start( 1,16); Moves=right,right,up   ,right,up   ,right,left ,up   ,up   ,right
+AgentNum= 19; Start( 5,14); Moves=right,right,up   ,up   ,right,right,up   ,up   ,up   ,right
+AgentNum= 20; Start( 7, 1); Moves=left ,left ,up   ,down ,right,right,left ,up   ,down ,left 
+
+
