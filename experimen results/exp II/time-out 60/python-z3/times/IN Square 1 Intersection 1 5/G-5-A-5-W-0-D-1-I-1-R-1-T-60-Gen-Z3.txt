@@ -1,9 +1,0 @@
-All Times:
-Test Set  1:     31
-
-Statistics:
-Total               :     31
-Average             :     31
-Average (no Min/Max):    ---
-Median              :     31
-

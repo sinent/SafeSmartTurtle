@@ -1,9 +1,0 @@
-                 #Turtle=5       
- Grid=10*10      1              
- Grid=10*10      1              
- Grid=10*10      6              
- Grid=10*10      6              
- Grid=10*10      6              
- Grid=10*10      13             
- Grid=10*10      33             
-

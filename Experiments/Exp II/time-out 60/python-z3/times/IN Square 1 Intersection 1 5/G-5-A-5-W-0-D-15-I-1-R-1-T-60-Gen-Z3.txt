@@ -1,0 +1,9 @@
+All Times:
+Test Set  1:   1584
+
+Statistics:
+Total               :   1584
+Average             :   1584
+Average (no Min/Max):    ---
+Median              :   1584
+

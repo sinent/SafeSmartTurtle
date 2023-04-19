@@ -1,6 +1,0 @@
-Grid Size: (50,50)
-Turtle ID:1 - Start: (17,13) - Moves:right,right,nop,right,nop,down,right, - Faults:3,0,0,1,2,0,0,3,3,0,
-Turtle ID:2 - Start: (20,0) - Moves:up,right,up, - Faults:3,0,1,2,3,0,3,1,0,3,
-Turtle ID:3 - Start: (9,1) - Moves:left,left,left,nop,nop,up,left, - Faults:2,3,0,2,2,1,0,1,2,2,
-Turtle ID:4 - Start: (42,25) - Moves:left,right,up,up, - Faults:2,3,0,0,3,2,2,0,1,2,
-Turtle ID:5 - Start: (28,42) - Moves:nop,nop,left,up, - Faults:2,0,3,0,2,1,0,3,1,1,
