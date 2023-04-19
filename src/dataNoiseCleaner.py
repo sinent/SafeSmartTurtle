@@ -40,9 +40,9 @@ def getTestData(fileAddress):
 
     return savedTimes
 
-def findNoises(folderNoisy,folderClean):
-    gridSizes = [5,10,15,20,50,100]
-    agentsNums =[5,10,15,20]
+def findNoises(folderNoisy,folderClean, timeout):
+    gridSizes = [10,15,20,50]
+    agentsNums =[10,15,20]
     paths =[1,5,10,15,20]
     csList =[]
     csList.append("IN Square 1 Intersection 1 3")
@@ -57,31 +57,35 @@ def findNoises(folderNoisy,folderClean):
         folderCS = folderNoisy + cs + os.path.sep
         for grid in gridSizes:
             for agent in agentsNums:
-                if ((cs == "IN Square 1 Intersection 1 8") or (cs == "IN Square 2 Count 8")) and agent==5:
-                    continue
+                # if ((cs == "IN Square 1 Intersection 1 8") or (cs == "IN Square 2 Count 8")) and agent==5:
+                #     continue
                 
                 for path in paths:
-                    fileName = "G-%d-A-%d-W-%d-D-%d-I-%d-R-%d-T-%d-Gen-Z3.txt" %(grid,agent,0,path,1,30,60)
+                    # fileName = "G-%d-A-%d-W-%d-D-%d-I-%d-R-%d-T-%d-Gen-Z3.txt" %(grid,agent,0,path,1,30,timeout)
+                    fileName = "G-%d-A-%d-W-%d-D-%d-I-%d-R-%d-T-%d-Fil-Erl-GenD.txt" %(grid,agent,0,path,1,30,timeout)
                     data = getTestData(folderCS+fileName)
-                    noises = list(filter(lambda score: (score//1000) > 60, data))
+                    noises = list(filter(lambda score: (score//1000) > timeout, data))
                     if len(noises)>0:
                         print("Noise found in %s - %s"%(folderCS,fileName))
                         print(noises)
-                        cleanedData = [59999 if (x//1000) > 60 else x for x in data]
+                        cleanedData = [(timeout*1000 -1) if (x//1000) > timeout else x for x in data]
                         # print(cleanedData)
-                        fileHelper.saveTimeResultsToFile(folderClean,fileName,cleanedData)                     
+                        fileHelper.saveTimeResultsToFile(folderClean + os.path.sep+ cs+ os.path.sep ,fileName,cleanedData)                     
 
 
 
 if __name__ == "__main__":
-    folderNoisy      = "GenTimes/py-30 samples/"
-    folderClean      = "GenTimes/py-30 samples-Clean/"
+    timeout = 60
+    method =   "/erl-qc" #"/python-z3" #
+    folderNoisy      = "Exp II - results/time-out "+ str(timeout)+ method+ "/times/"
+    folderClean      = "Exp II - results/time-out "+ str(timeout)+ method+ "/times/Cleaned/"
 
     # if os.path.exists(folderNoisy):
     #     print(True)
     # else:
-    #     open(folderNoisy,"x")
-    findNoises(folderNoisy,folderClean)
+    #     print(False)
+    #     # open(folderNoisy,"x")
+    findNoises(folderNoisy,folderClean, timeout)
 
     # times = getTestData("GenTimes/erl-20-samples/IN Square 1 Intersection 1 3 - Erlang/G-5-A-5-W-0-D-1-I-1-R-20-T-60-Fil-Erl-GenB.txt")
     # [print(time) for time in times]

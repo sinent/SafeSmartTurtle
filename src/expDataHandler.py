@@ -4,7 +4,7 @@ import pandas as pd
 
 # gathering/combining the experimeental data into relevant files
 
-def getData_Median(folderName):
+def getData_MedianAverage(folderName):
     onlyfiles = [f for f in os.listdir(folderName) if os.path.isfile(os.path.join(folderName, f))]
 
     gridsArray = []
@@ -52,7 +52,7 @@ def getData_Median(folderName):
 
     return gridsArray,agentsArray,dispsArray,medianArray,averageArray
 
-def saveData(methodName,csList):
+def saveData(methodName,csList,timeout):
     csAll = []
     gridsAll = []
     agentsAll=[]
@@ -62,10 +62,12 @@ def saveData(methodName,csList):
 
     for cs in csList:
         if methodName == "z3":
-            f_z3   = "GenTimes/all sizes/py-30-samples/" +cs +"/"
+            folderMethod = "/python-z3" 
         else:
-            f_z3   = "GenTimes/all sizes/erl-30-samples/"+cs +"/"
-        grids,agents,paths,medians,averages = getData_Median(f_z3)
+            folderMethod = "/erl-qc" 
+        dataFolder = "Exp II - results/time-out "+ str(timeout)+ folderMethod+ "/times/"+cs +"/"
+        grids,agents,paths,medians,averages = getData_MedianAverage(dataFolder)
+
         csAll.extend([cs]*len(grids))
         gridsAll.extend(grids)
         agentsAll.extend(agents)
@@ -133,13 +135,13 @@ def saveData(methodName,csList):
                 'Time_Median':   sortedDataFrame['Time_Median'].tolist()[oneMethodSize:],
                 'Time_Average':  sortedDataFrame['Time_Average'].tolist()[oneMethodSize:]}
 
-    print("I am here!")
-    print (len(sortedDataFrame))
-    print (len(gridsAll))
-    print (len(sortedDataFrame))
-    print (len(pathsAll))
-    print (len(mediansAll))
-    print (len([methodName]*len(gridsAll)) )
+    # print("I am here!")
+    # print (len(sortedDataFrame))
+    # print (len(gridsAll))
+    # print (len(sortedDataFrame))
+    # print (len(pathsAll))
+    # print (len(mediansAll))
+    # print (len([methodName]*len(gridsAll)) )
 
     df = pd.DataFrame(dataCS)
     if methodName == "z3":
@@ -157,8 +159,10 @@ if __name__ == "__main__":
     csList.append("IN Square 2 Count 3")
     csList.append("IN Square 2 Count 5")
     csList.append("IN Square 2 Count 8")
-    saveData("erlang",csList)
-    saveData("z3",csList)
+
+    timeout = 60
+    saveData("erlang",csList,timeout)  # we need separated files for z3 and qc results, to apply statistical tests easier on them
+    saveData("z3",csList,timeout)
 
     # f_z3   = "GenTimes/"+cs #+" - Erlang/"
     # gridsArray,agentsArray,dispsArray,medianz3 = getData_Median(f_z3)

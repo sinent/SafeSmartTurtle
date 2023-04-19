@@ -473,14 +473,15 @@ def drawPlotsManual():
 def getSortedData(method, gridSize,agentsNum, pathlength, cs):
     if method == "z3":
         if ("Intersection" in cs):
-            fileName = "GenTimes/z3_intersection.csv"
+            fileName = "Exp II - results/time-out 60/cleaned data - times/z3_intersection.csv"
+            # fileName = "GenTimes/z3_intersection.csv"
         else:
-            fileName = "GenTimes/z3_count.csv"
+            fileName = "Exp II - results/time-out 60/cleaned data - times/z3_count.csv"
     else:
         if ("Intersection" in cs):
-            fileName = "GenTimes/erlang_intersection.csv"
+            fileName = "Exp II - results/time-out 60/cleaned data - times/erlang_intersection.csv"
         else:
-            fileName = "GenTimes/erlang_count.csv"
+            fileName = "Exp II - results/time-out 60/cleaned data - times/erlang_count.csv"
 
     if ("3" in cs):
         csValue = 3

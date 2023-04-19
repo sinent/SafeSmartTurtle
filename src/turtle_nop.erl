@@ -26,32 +26,53 @@
 
 %% executing the experiment with the defined parameters and saving the results in 'NoFilter', 'F1', 'F2', and 'F3' folders
 experiment1()->
-	GridSize = 50,
+	% You need to execute the Java SUT before running this method
+
+ 	GridSize = 20,
  	TurtleNum = 5,
- 	NumOfRuns = 10,    
- 	NumOfTestCases = 100000, %% if the test is not failed before this number of inputs, the test will supposed as passed one
- 	PathActionSteps=5,
+ 	NumOfRuns = 100,    
+ 	NumOfTestCases = 10000000, %% if the test is not failed before this number of inputs, the test will supposed as passed one
+ 	PathActionSteps= 5,
 	PathWaitSteps = 5,
+	FolderName = "exp1-SUT3",
+	FilterF1 = {"IN", {"Circle", 3}, {"Count", 2}},
+	FilterF2 = {"IN", {"Circle", 1}, {"Count", 2}},
+	FilterF3 = {"IN", {"Circle", 1}, {"Intersection", 1,2}},
+%% 	FilterF4 = {"IN", {"Circle", 1}, { "And", {"Count", 2}, {"Intersection", 1,2} } },
+	SUT = "-SUT-randFilterOrCorrect",
+	Gen = "-GenD-",
+	ExpInfo=  "G-"++integer_to_list(GridSize) ++
+			 "-A-"++integer_to_list(TurtleNum)++
+			 "-W-"++integer_to_list(PathWaitSteps)++
+			 "-D-"++integer_to_list(PathActionSteps)++
+			 "-R-"++integer_to_list(NumOfRuns)++	  
+				Gen++SUT,
+	io:fwrite("~nTestsing for ~s.~n",[ExpInfo]), timer:sleep(2000),
  	io:fwrite("~n~nTesting with no filter:~n~n"),
-  	experiment1([GridSize],[TurtleNum], NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, true, filename:join(["Exp I - results","NoFilter"])),
-	io:fwrite("~n~nTesting with filter F1:~n~n"),
-	timer:sleep(2000),
-	experiment1([GridSize],[TurtleNum], NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, {"IN", {"Circle", 5}, {"Count", 2}}, filename:join(["Exp I - results","F1"])),
-	io:fwrite("~n~nTesting with filter F2:~n~n"),
-	timer:sleep(2000),
-	experiment1([GridSize],[TurtleNum], NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, {"IN", {"Circle", 3}, {"Count", 2}}, filename:join(["Exp I - results","F2"])),
-	io:fwrite("~n~nTesting with filter F3:~n~n"),
-	timer:sleep(2000),
- 	experiment1([GridSize],[TurtleNum], NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, {"IN", {"Circle", 3}, {"Intersection", 1,2}}, filename:join(["Exp I - results","F3"])).
+  	experiment1([GridSize],[TurtleNum], NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, true, 
+				filename:join([FolderName,ExpInfo, "NoFilter"])),
+	io:fwrite("~n~nTesting with filter F1:~n~n"),timer:sleep(2000),
+	experiment1([GridSize],[TurtleNum], NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, FilterF1, 
+				filename:join([FolderName,ExpInfo, "F1"])),
+	io:fwrite("~n~nTesting with filter F2:~n~n"),timer:sleep(2000),
+	experiment1([GridSize],[TurtleNum], NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, FilterF2, 
+				filename:join([FolderName,ExpInfo, "F2"])),
+	io:fwrite("~n~nTesting with filter F3:~n~n"), timer:sleep(2000),
+ 	experiment1([GridSize],[TurtleNum], NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, FilterF3, 
+				filename:join([FolderName,ExpInfo, "F3"])).
+%% 	io:fwrite("~n~nTesting with filter F4:~n~n"),
+%% 	timer:sleep(2000),
+%%  	experiment1([GridSize],[TurtleNum], NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, FilterF4, 
+%% 				filename:join([FolderName,ExpInfo, "F4"])).
 
-experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases)->
-	experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases, 10, 10, true, "Results").
-
-experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps)->
-	experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, 0, "Results").
-
-experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, FilteringConstraint)->
-	experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, FilteringConstraint, "Results").
+%% experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases)->
+%% 	experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases, 10, 10, true, "Results").
+%% 
+%% experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps)->
+%% 	experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, 0, "Results").
+%% 
+%% experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, FilteringConstraint)->
+%% 	experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, FilteringConstraint, "Results").
 
 experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases, PathActionSteps, PathWaitSteps, FilteringConstraint, RootFilePathAddress)->
 	
@@ -63,7 +84,11 @@ experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases, PathActionSteps, Pa
 	io:fwrite("Testing the property is done.~nIt took ~w seconds.~n",[TimeDiff]),
 	filelib:ensure_dir(filename:join([RootFilePathAddress, "Time.txt"])), 
 	{ok,S} = file:open(filename:join([RootFilePathAddress, "Time.txt"]), [write]),
-	io:format(S, "Test execution took ~w seconds.~n", [TimeDiff]),
+	if
+		TimeDiff<60-> 	io:format(S, "Test execution took ~w seconds.~n", [TimeDiff]);
+		TimeDiff<3600-> io:format(S, "Test execution took ~4s minutes.~n", [float_to_list(TimeDiff/60)]);
+		true-> io:format(S, "Test execution took ~4s hours.~n", [float_to_list(TimeDiff/3660)])
+	end,
 	
 	filelib:ensure_dir(filename:join([RootFilePathAddress, "Raw", "TestsNum.txt"])), 
 	filehelper:writeFileResults_exp1Format(filename:join([RootFilePathAddress, "Raw", "TestsNum.txt"]), "ansNumTests", Res, GridSizes,TurtleNums),
@@ -109,27 +134,33 @@ experiment1(GridSizes,TurtleNums, NumOfRuns, NumOfTestCases, PathActionSteps, Pa
 %%			}
 
 cleanRunsAll_propCollision(GridSizes, TurtlesNums,NumOfRuns,NumOfTestCases,PathActionSteps, PathWaitSteps,FilteringConstraint)->
-	[cleanRunsForTurtles_propCollision(GridSize, TurtlesNums,NumOfRuns,NumOfTestCases,PathActionSteps, PathWaitSteps,FilteringConstraint) || GridSize<-GridSizes].
+	[
+	 	[begin
+			 TestsExecInfo = run_propCollision(NumOfRuns, GridSize, TurtleNum,NumOfTestCases,PathActionSteps, PathWaitSteps,FilteringConstraint, []), % a list of records
+			 cleanAndCombineInfo_PropCollision(TestsExecInfo) % cleaning the properties of no interest, combining records to one record that each of its elements is a list   
+		 end
+	 	|| TurtleNum<-TurtlesNums]
+	||GridSize<-GridSizes].
 
-cleanRunsForTurtles_propCollision(GridSize, TurtleNums,NumOfRuns,NumOfTestCases,PathActionSteps, PathWaitSteps,FilteringConstraint)->
-%% 	case PropertyNum of
-%% 		-1	-> FilterFunction = FileterFunc;
-%% 		0	-> FilterFunction = fun(_TurtlesPaths) -> true end;
-%% 		1	-> FilterFunction = fun(TurtlesPaths)  -> checkMinDistanceOfAllPaths(calculateAllPathsPoints(TurtlesPaths, GridSize,GridSize),10) end;
-%% 		2	-> FilterFunction = fun(TurtlesPaths)  -> checkMinDistanceOfAllPaths(calculateAllPathsPoints(TurtlesPaths, GridSize,GridSize),6) end;
-%% 		3	-> FilterFunction = fun(TurtlesPaths)  -> existsCommonInAllPaths(calculateAllPathsPoints(TurtlesPaths, GridSize,GridSize)) end
-%% 	end,
-
-%% 	case PropertyNum of
-%% 		-1	-> FilterFunction = FileterFunc;
-%% 		0	-> FilterFunction = fun(_TurtlesPaths) -> true end;
-%% 		%1	-> FilterFunction = fun(TurtlesPaths)  -> cshandler:evalCS(GridSize, GridSize, {"IN", {"Circle", 5}, {"Count", 2}}, TurtlesPaths ) end;
-%% 		1	-> FilterFunction = fun(TurtlesPaths)  -> pathFilterWithZ3(GridSize, GridSize, TurtleNums, PathWaitSteps, PathActionSteps, {"IN", {"Circle", 5}, {"Count", 2}}, TurtlesPaths) end;
-%% 		2	-> FilterFunction = fun(TurtlesPaths)  -> cshandler:evalCS(GridSize, GridSize, {"IN", {"Circle", 3}, {"Count", 2}}, TurtlesPaths ) end;
-%% 		3	-> FilterFunction = fun(TurtlesPaths)  -> cshandler:evalCS(GridSize, GridSize, {"IN", {"Circle", 1}, {"Intersection", 1,2}}, TurtlesPaths ) end     
-%% 	end,
-%% 	
-	[cleanRuns_propCollision(GridSize, TurtleNum,NumOfRuns,NumOfTestCases,PathActionSteps, PathWaitSteps,FilteringConstraint) || TurtleNum<-TurtleNums].
+%% cleanRunsForTurtles_propCollision(GridSize, TurtleNums,NumOfRuns,NumOfTestCases,PathActionSteps, PathWaitSteps,FilteringConstraint)->
+%% %% 	case PropertyNum of
+%% %% 		-1	-> FilterFunction = FileterFunc;
+%% %% 		0	-> FilterFunction = fun(_TurtlesPaths) -> true end;
+%% %% 		1	-> FilterFunction = fun(TurtlesPaths)  -> checkMinDistanceOfAllPaths(calculateAllPathsPoints(TurtlesPaths, GridSize,GridSize),10) end;
+%% %% 		2	-> FilterFunction = fun(TurtlesPaths)  -> checkMinDistanceOfAllPaths(calculateAllPathsPoints(TurtlesPaths, GridSize,GridSize),6) end;
+%% %% 		3	-> FilterFunction = fun(TurtlesPaths)  -> existsCommonInAllPaths(calculateAllPathsPoints(TurtlesPaths, GridSize,GridSize)) end
+%% %% 	end,
+%% 
+%% %% 	case PropertyNum of
+%% %% 		-1	-> FilterFunction = FileterFunc;
+%% %% 		0	-> FilterFunction = fun(_TurtlesPaths) -> true end;
+%% %% 		%1	-> FilterFunction = fun(TurtlesPaths)  -> cshandler:evalCS(GridSize, GridSize, {"IN", {"Circle", 5}, {"Count", 2}}, TurtlesPaths ) end;
+%% %% 		1	-> FilterFunction = fun(TurtlesPaths)  -> pathFilterWithZ3(GridSize, GridSize, TurtleNums, PathWaitSteps, PathActionSteps, {"IN", {"Circle", 5}, {"Count", 2}}, TurtlesPaths) end;
+%% %% 		2	-> FilterFunction = fun(TurtlesPaths)  -> cshandler:evalCS(GridSize, GridSize, {"IN", {"Circle", 3}, {"Count", 2}}, TurtlesPaths ) end;
+%% %% 		3	-> FilterFunction = fun(TurtlesPaths)  -> cshandler:evalCS(GridSize, GridSize, {"IN", {"Circle", 1}, {"Intersection", 1,2}}, TurtlesPaths ) end     
+%% %% 	end,
+%% %% 	
+%% 	[cleanRuns_propCollision(GridSize, TurtleNum,NumOfRuns,NumOfTestCases,PathActionSteps, PathWaitSteps,FilteringConstraint) || TurtleNum<-TurtleNums].
 
 %%=====================================================================================================
 
@@ -146,9 +177,9 @@ cleanRunsForTurtles_propCollision(GridSize, TurtleNums,NumOfRuns,NumOfTestCases,
 %%				ansShrinkSteps	  		---> a list which is the collection of 'ansShrinkSteps' items in each test suit execution results
 %%			}
 
-cleanRuns_propCollision(GridSize,TurtlesNum,NumOfRuns,NumOfTestCases,PathActionSteps, PathWaitSteps,FilteringConstraint) ->
-    TestsExecInfo = run_propCollision(NumOfRuns, GridSize, TurtlesNum,NumOfTestCases,PathActionSteps, PathWaitSteps,FilteringConstraint, []), % a list of records
-	cleanAndCombineInfo_PropCollision(TestsExecInfo). % cleaning the properties of no interest, combining records to one record that each of its elements is a list          
+%% cleanRuns_propCollision(GridSize,TurtlesNum,NumOfRuns,NumOfTestCases,PathActionSteps, PathWaitSteps,FilteringConstraint) ->
+%%     TestsExecInfo = run_propCollision(NumOfRuns, GridSize, TurtlesNum,NumOfTestCases,PathActionSteps, PathWaitSteps,FilteringConstraint, []), % a list of records
+%% 	cleanAndCombineInfo_PropCollision(TestsExecInfo). % cleaning the properties of no interest, combining records to one record that each of its elements is a list          
 
 %%=====================================================================================================
 
@@ -181,7 +212,9 @@ run_propCollision(0, _,_,_,_,_,_, TestsExecInfo) ->
     TestsExecInfo;
 
 run_propCollision(NumOfRuns, GridSize, TurtlesNum,NumOfTestCases,PathActionSteps, PathWaitSteps,FilteringConstraint, TestsExecInfo) ->
-	ExecInfo = counterexample(numtests(NumOfTestCases,propCollision(GridSize, TurtlesNum, PathActionSteps, PathWaitSteps,FilteringConstraint)), [{with_info, true}]),
+	ExecInfo = counterexample(numtests(NumOfTestCases,propCollision2(GridSize, TurtlesNum, PathActionSteps, PathWaitSteps,FilteringConstraint)), [{with_info, true}]),
+	io:fwrite("Remaining runs: ~s~n", [integer_to_list(NumOfRuns -1)]),
+	timer:sleep(2000),
 	run_propCollision(NumOfRuns - 1, GridSize, TurtlesNum,NumOfTestCases,PathActionSteps, PathWaitSteps,FilteringConstraint, [ExecInfo | TestsExecInfo]).
 
 %%=====================================================================================================
@@ -245,8 +278,51 @@ propCollision(GridSize, TurtlesNumbers, PathActionSteps, PathWaitSteps, Filterin
 %% 	).
 
 
-%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+%++++++++++++++++++++++++++++++++++
+propCollision2(GridSize, TurtlesNumbers, PathActionSteps, PathWaitSteps, FilteringConstraint) ->
+
+    MaxX = GridSize,
+    MaxY = GridSize,
+	if
+		FilteringConstraint==true -> FilterFunction = fun(_TurtlesPaths) -> true end;
+		true					  -> FilterFunction = fun(TurtlesPaths) -> cshandler:evalCS(GridSize, GridSize, FilteringConstraint, TurtlesPaths) end
+	end,
+	?FORALL( {TurtlesPaths,TurtlesFaults}, 
+			 {turtlesPaths_gen_D(MaxX, MaxY, TurtlesNumbers, PathActionSteps, PathWaitSteps), 
+			  noshrink(turtlesFaultsGen(TurtlesNumbers,PathActionSteps+PathWaitSteps))},
+			 ?IMPLIES(FilterFunction( calculateAllPathsPoints (TurtlesPaths, MaxX, MaxY) ),
+					  begin
+							turtlesworld3:run(TurtlesPaths,TurtlesFaults, MaxX, MaxY)
+					   end
+			 )
+	).
+
+	% ?FORALL( {TurtlesPaths,TurtlesFaults}, 
+	% 		 {turtlesPaths_gen_D(MaxX, MaxY, TurtlesNumbers, PathActionSteps, PathWaitSteps), 
+	% 		  noshrink(turtlesFaultsGen(TurtlesNumbers,PathActionSteps+PathWaitSteps))},
+	% 		 ?IMPLIES(FilterFunction( calculateAllPathsPoints (TurtlesPaths, MaxX, MaxY) ),
+	% 				  begin
+	% 						turtlesworld3:run(TurtlesPaths,TurtlesFaults, MaxX, MaxY)
+	% 						% FileName = "SUT_Input2.txt",
+	% 						% turtlesworld3:writeInputToFile(TurtlesPaths,TurtlesFaults, MaxX, MaxY, FileName),
+	% 						% true
+	% 					end
+	% 		 )
+	% ).
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+myTest2()->
+		counterexample(numtests(1,propCollision2(10, 5, 5, 5, true)), [{with_info, true}]).
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+turtlesFaultsGen(TurtlesNumbers, NumOfSteps)->
+	MaxNumOfFaults = 3,
+	[[choose(0,MaxNumOfFaults)
+					||_J<-lists:seq(1, NumOfSteps)]
+				||_I<-lists:seq(1, TurtlesNumbers)].
+
+
+%+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 prop2(GridSize, TurtlesNumbers, PathActionSteps, PathWaitSteps, CS, FilterType, GenType) ->
     MaxX = GridSize,
     MaxY = GridSize,
@@ -261,7 +337,8 @@ prop2(GridSize, TurtlesNumbers, PathActionSteps, PathWaitSteps, CS, FilterType, 
 			  begin
 				  	if 
 						GenType == "GenA" -> turtlesPaths_gen_A(MaxX, MaxY, TurtlesNumbers, PathActionSteps, PathWaitSteps) ;
-						GenType == "GenB" -> turtlesPaths_gen_B(MaxX, MaxY, TurtlesNumbers, PathActionSteps, PathWaitSteps)
+						GenType == "GenB" -> turtlesPaths_gen_B(MaxX, MaxY, TurtlesNumbers, PathActionSteps, PathWaitSteps) ;
+						GenType == "GenD" -> turtlesPaths_gen_D(MaxX, MaxY, TurtlesNumbers, PathActionSteps, PathWaitSteps) 
 					end
 			  end,
 			  ?IMPLIES(FilterFunction( calculateAllPathsPoints (TurtlesPaths, MaxX, MaxY) ),
@@ -300,7 +377,7 @@ propFilter(GridSize, TurtlesNumbers, PathActionSteps, PathWaitSteps, CS) ->
 	).
 
 getFilteringTime()->
-	GridSizes  = [10,20,50,100],%lists:seq(15,15),
+	GridSizes  = [10,15,20,50],%lists:seq(15,15),
 	AgentsNum = 5,%lists:seq(5,20),
 	WaitSteps  = 5,
 	DispSteps  = 5,%lists:seq(1,20),,
@@ -329,27 +406,27 @@ getFilteringTime()->
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-qcGenPerformance()->
+experiment2_qc()->
 %% 	{ok, P1} = python:start(), 
 %% 	register(pyProcGen, P1),
 	
 %% 	{ok, P2} = python:start(),
 %% 	register(pyProcFil, P2),
-			
+		
 	GridSizes  = [10,15,20,50],%lists:seq(15,15),
 	AgentsNums = [10,15,20],%lists:seq(5,20),
 	WaitSteps  = 0,
 	DispStepss  = [1,5,10,15,20],%lists:seq(1,20),
 	InputNum  = 1,
 	AreaType = "Square",
-	AreaSize = 2,
-	ConditionType = "Count", % "Intersection", 
-%% 	NumOccurrances = 1,
-	Degree = 3,
-%% 	CS = {"IN", {AreaType, AreaSize}, {ConditionType, NumOccurrances, Degree}}, % for intersection type
-	CS = {"IN", {AreaType, AreaSize}, {ConditionType, Degree}}, % for count type
+	AreaSize = 1,
+	ConditionType =  "Intersection", %"Count", %
+	NumOccurrances = 1,
+	Degree = 8,
+	CS = {"IN", {AreaType, AreaSize}, {ConditionType, NumOccurrances, Degree}}, % for intersection type
+	% CS = {"IN", {AreaType, AreaSize}, {ConditionType, Degree}}, % for count type
 	CS_folderName = "IN "++ AreaType ++ " " ++ integer_to_list(AreaSize) ++ " " ++ ConditionType ++ 
-%% 						" " ++ integer_to_list(NumOccurrances) ++    %uncomment for intersection type - comment for count type
+						" " ++ integer_to_list(NumOccurrances) ++    %uncomment for intersection type - comment for count type
 						" " ++ integer_to_list(Degree),
 	RepeatExp = 30,
 	TimeOutSec = 60,  % time-out for one repeat, to generate InputNum inputs
@@ -357,7 +434,7 @@ qcGenPerformance()->
 %% 	expPaper2Run(20, 20, 20, 20, 1, CS, "BadData", 1, 1 ),
 	[expPaper2Run(GridSize, AgentsNum, WaitSteps, DispSteps, InputNum, CS, CS_folderName, RepeatExp, TimeOutSec )
 	 ||  GridSize<-GridSizes,AgentsNum<- AgentsNums, DispSteps<-DispStepss ],
-
+	
 %% 	Proc1 = whereis(pyProcGen),
 %% 	exit(Proc1, kill),
 
@@ -369,8 +446,8 @@ qcGenPerformance()->
 
 expPaper2Run(GridSize, AgentsNum, WaitSteps, DispSteps, InputNum, CS, CS_folderName, RepeatExp, TimeOutSec )->
 		
-	FolderNameTimes  = filename:join(["Exp II - results", "qc-erlang", "GenTimes" , CS_folderName]),
-	FolderNameInputs = filename:join(["Exp II - results", "qc-erlang", "GenInputs", CS_folderName]),
+	FolderNameTimes  = filename:join(["GenTimes" , CS_folderName]),
+	FolderNameInputs = filename:join(["GenInputs", CS_folderName]),
 	ExpInfo=  "G-"++integer_to_list(GridSize) ++
 			 "-A-"++integer_to_list(AgentsNum)++
 			 "-W-"++integer_to_list(WaitSteps)++
@@ -388,12 +465,12 @@ expPaper2Run(GridSize, AgentsNum, WaitSteps, DispSteps, InputNum, CS, CS_folderN
 %% 	io:fwrite("~nFiltering with erlang code-GenA is done and saved in a file. ~n~n"),
 %% 	timer:sleep(2000),
 	
-	Results2 = [forceGetFilteredInputs(GridSize, GridSize, AgentsNum, WaitSteps, DispSteps, CS, InputNum, "erlang", "GenB", TimeOutMilSec) || _I<-lists:seq(1, RepeatExp)],
-	FileNameTimes2  = filename:join([FolderNameTimes,  ExpInfo++"-Fil-Erl-GenB.txt"]),
-	FileNameInputs2 = filename:join([FolderNameInputs, ExpInfo++"-Fil-Erl-GenB.txt"]),
+	Results2 = [forceGetFilteredInputs(GridSize, GridSize, AgentsNum, WaitSteps, DispSteps, CS, InputNum, "erlang", "GenD", TimeOutMilSec) || _I<-lists:seq(1, RepeatExp)],
+	FileNameTimes2  = filename:join([FolderNameTimes,  ExpInfo++"-Fil-Erl-GenD.txt"]),
+	FileNameInputs2 = filename:join([FolderNameInputs, ExpInfo++"-Fil-Erl-GenD.txt"]),
 	saveTimesToFile( Results2, FileNameTimes2),
 	saveInputsToFile(Results2, FileNameInputs2),
-	io:fwrite("~nFiltering with erlang code-GenB is done and saved in a file. ~n~n"),
+	io:fwrite("~nFiltering with erlang code-GenD is done and saved in a file. ~n~n"),
 	timer:sleep(1000),
 	
 %% 	Results3 = [getFilteredInputs(GridSize, GridSize, AgentsNum, WaitSteps, DispSteps, CS, InputNum, "z3", "GenB") || _I<-lists:seq(1, RepeatExp)],
@@ -793,6 +870,221 @@ path_gen_B(MaxX, MaxY, PathActionSteps, PathWaitSteps)->
 		).
 %%=====================================================================================================
 
+turtlesPaths_gen_C(MaxX, MaxY, TurtlesNumbers, PathActionSteps, PathWaitSteps) ->
+    ?LET(Paths, [path_gen_C(MaxX, MaxY,PathActionSteps, PathWaitSteps) || _Index<-lists:seq(1, TurtlesNumbers) ],
+         [ {Idx, StartX, StartY, Path} || {Idx, {StartX, StartY, Path}} <- lists:zip(lists:seq(1, length(Paths)), Paths) ]
+		).
+%%=====================================================================================================
+
+getStartAndGoalPoints(MaxX, MaxY, PathActionSteps)->
+	noshrink(
+	  ?LET(	
+	  		{StartX, StartY}, 
+			{choose(0,MaxX), choose(0,MaxY)},
+			?LET(
+					{Xrand, Yrand}, 
+					{choose(0,2*PathActionSteps), choose(0,2*PathActionSteps)},
+					 begin
+						 OffsetX = Xrand - PathActionSteps,
+						 OffsetY = Yrand - PathActionSteps,
+						 % Finding the end point within a square, not circle
+						 if 
+							 StartX+OffsetX>MaxX -> EndX = MaxX;
+							 StartX+OffsetX<0	 -> EndX = 0;
+							 true 				 -> EndX = StartX+OffsetX
+						 end,
+						 
+						 if 
+							 StartY+OffsetY>MaxY -> EndY = MaxY;
+							 StartY+OffsetY<0	 -> EndY = 0;
+							 true 				 -> EndY = StartY+OffsetY
+						 end,
+						 if 
+							 (StartX==EndX) and (StartY==EndY)->getStartAndGoalPoints(MaxX, MaxY, PathActionSteps);
+						 	true->{StartX,StartY,EndX,EndY}
+						 end
+					 end
+		  	)
+	   	)
+	).
+
+path_gen_C(MaxX, MaxY, PathActionSteps, PathWaitSteps)->	
+	?LET(
+			{StartX,StartY,EndX,EndY}, 
+			getStartAndGoalPoints(MaxX, MaxY, PathActionSteps),
+			?LET(
+					RawRouteTemp, 
+					shuffle(findActions(StartX, StartY, EndX, EndY)),  % finding the shortest path to reach the goal from start, and then shuffle them
+			 		begin
+						 % in case, ending the route up to the circle borders 
+						 % if the end point is out of the circle area
+						 RawRoute = lists:sublist(RawRouteTemp, PathActionSteps),
+					 	
+						 % the chosen path can be shorter than the maximum number of displacement steps
+						 % the differece is the maximum number of wiggling actions
+						 MaxWigglingNum = abs(length(RawRoute) - PathActionSteps),				 
+						 Wiggling = ?LET(
+											WigllingNum, 
+											choose(0,MaxWigglingNum),
+									 		[begin 
+												  ?LET(Elem, elements([right, up]), 	
+													   begin						 
+															if
+													 			(Elem == right) -> [right, left];
+													 			true ->  [up, down]
+												 			end
+													   end)
+											 end
+											|| _<-lists:seq(1, WigllingNum div 2) ]),
+						 WiggleActions  = ?LET(XXX, Wiggling,lists:append(XXX)),
+						 AddRouteAction = ?LET(WActions, WiggleActions, 
+												begin
+													if 
+												 		length(RawRoute)+length(WActions) == PathActionSteps -> [];
+												 		true -> oneof( [ return([]), [elements([up, down, left,right])] ]) % either to pick one action or nothing
+											 		end
+													
+												end),
+						 WaitingActions = sublist([nop || _Index<-lists:seq(1, PathWaitSteps) ]),
+						 Path = ?LET( {WA, ARA, WaitAc}, {WiggleActions,AddRouteAction,WaitingActions},
+									  shuffle(RawRoute++WA++ARA++WaitAc)),
+						 FinalPath = ?LET(MyPath, Path, 
+										  begin
+											  PathDiff = PathWaitSteps+PathActionSteps-length(MyPath),
+											  Attachment = [nop || _Index<-lists:seq(1, PathDiff)],
+											  MyPath++Attachment
+										  end),								 
+						 {StartX, StartY, FinalPath}			 
+				 	end
+			)
+	).
+
+%%=====================================================================================================
+
+turtlesPaths_gen_D(MaxX, MaxY, TurtlesNumbers, PathActionSteps, PathWaitSteps) ->
+    ?LET(Paths, 
+		 [path_gen_D(MaxX, MaxY,PathActionSteps, PathWaitSteps) || _Index<-lists:seq(1, TurtlesNumbers) ],
+         [ {Idx, StartX, StartY, Path} || {Idx, {StartX, StartY, Path}} <- lists:zip(lists:seq(1, length(Paths)), Paths) ]
+		).
+%%=====================================================================================================
+
+getStartAndGoalPointsD(MaxX, MaxY, PathActionSteps)->
+	  ?LET(	
+	  		{StartX, StartY}, 
+			{noshrink(choose(0,MaxX-1)), noshrink(choose(0,MaxY-1))},
+			?LET(
+					{Xrand, Yrand}, 
+					{choose(0,2*PathActionSteps), choose(0,2*PathActionSteps)},
+					 begin
+						 OffsetX = Xrand - PathActionSteps,
+						 OffsetY = Yrand - PathActionSteps,
+						 % Finding the end point within a square, not circle
+						 if 
+							 StartX+OffsetX>MaxX -> EndX = MaxX;
+							 StartX+OffsetX<0	 -> EndX = 0;
+							 true 				 -> EndX = StartX+OffsetX
+						 end,
+						 
+						 if 
+							 StartY+OffsetY>MaxY -> EndY = MaxY;
+							 StartY+OffsetY<0	 -> EndY = 0;
+							 true 				 -> EndY = StartY+OffsetY
+						 end,
+						 if 
+							 (StartX==EndX) and (StartY==EndY)->getStartAndGoalPoints(MaxX, MaxY, PathActionSteps);
+						 	true->{StartX,StartY,EndX,EndY}
+						 end
+					 end
+		  	)
+	   	).
+
+
+path_gen_D(MaxX, MaxY, PathActionSteps, PathWaitSteps)->	
+	?LET(
+			{StartX,StartY,EndX,EndY}, 
+			getStartAndGoalPointsD(MaxX, MaxY, PathActionSteps), % the end point is different than the starting point
+			?LET(
+					RawRouteTemp, 
+					shuffle(findActions(StartX, StartY, EndX, EndY)),  % finding the shortest path to reach the goal from start, and then shuffle them
+					% since the end point and the starting point are different, we have atleast one diplacement action
+			 		begin
+						 % in case of having route length longer (one step) than the reequired circle borders, 
+						 % I end the route up to the circle borders 
+						 % if the end point is out of the circle area
+						 RawRoute = lists:sublist(RawRouteTemp, PathActionSteps),
+					 	
+						 % the chosen path can be shorter than the maximum number of displacement steps
+						 % the differece is the maximum number of wiggling actions
+						 MaxWigglingNum = abs(length(RawRoute) - PathActionSteps),				 
+						 Wiggling = ?LET(
+											WigllingNum, 
+											choose(0,MaxWigglingNum),
+									 		[begin 
+%% 												  AAA=
+													  ?LET(Elem, elements([right, up]), 	
+													   begin
+%% 														   io:format("Start LET~n"),					 
+															if
+													 			(Elem == right) -> [right, left];
+													 			true ->  [up, down]
+												 			end
+													   end)%,
+%% 												  io:format("end LET~n"),
+%% 												  AAA
+											 end
+											|| _<-lists:seq(1, WigllingNum div 2) ]),
+						 WiggleActions  = ?LET(XXX, Wiggling,lists:append(XXX)),
+%% 						 AddRouteAction = ?LET(WActions, WiggleActions, 
+%% 												begin
+%% 													Total = length(RawRoute)+length(WActions),
+%% 													io:format("raw route:~w~n", [RawRoute]),
+%% 													io:format("wiggling :~w~n", [WActions]),
+%% 													io:format("Total:~w~n", [Total]),
+%% 													if 
+%% 												 		 (Total == PathActionSteps) -> [];
+%% 												 		true -> oneof( [ return([]), [elements([up, down, left,right])] ]) % either to pick one action or nothing
+%% 											 		end
+%% 													
+%% 												end),
+						 AllWaitSteps = [nop || _Index<-lists:seq(1, PathWaitSteps) ],
+						 WaitingActions = sublist(AllWaitSteps),
+						 Path = ?LET( {WA, WaitAc}, {WiggleActions,WaitingActions},
+									  begin
+%% 										  FinalPathLength = PathWaitSteps+PathActionSteps - length(RawRoute++WA++WaitAc),
+%% 										  io:format("FinalPathLength:~w~n", [FinalPathLength]),
+%% 										  if FinalPathLength<0->
+%% 												 begin
+%% 													 io:format("FinalPathLength is <0.~n"),
+%% 													 io:format("raw route:~w~n", [RawRoute]),
+%% 													 io:format("wiggling :~w~n", [WA]),
+%% 													 io:format("ARA      :~w~n", [ARA]),
+%% 													 io:format("WaitAc   :~w~n", [WaitAc]),
+%% 													 exit(self(), normal)
+%% 												 end;
+%% 											 true->
+%% 												 ok
+%% 										  end,
+										  % the must wait steps are placed before the last displacement action
+										  shuffle(lists:droplast(RawRoute)++WaitAc++WA)
+									  end),
+						 % for simplicity (in implementing the filters) we generate paths of the same size of 'MaxDisplacementSteps+MaxWaitSteps'
+						 % after the last displacement step, the agent will reach its goal point
+						 % the wait steps after the last discplacement steps will be ignored by the turtle while execution			  
+						 FinalPath = ?LET(MyPath, Path, 
+										  begin
+										  	  MyExecutionPath = MyPath++[lists:last(RawRoute)],
+											  PathDiff = PathWaitSteps+PathActionSteps-length(MyExecutionPath),
+											  Attachment = [nop || _Index<-lists:seq(1, PathDiff)],
+											  MyExecutionPath++Attachment
+										  end),								 
+						 {StartX, StartY, FinalPath}			 
+				 	end
+			)
+	).
+
+
+
+%======================================================================================================
 
 printPointsAll([OneTurtle|[]])->
 	{ok,PF} = file:open("gen_deltaXY.txt", [append]),

@@ -4,7 +4,6 @@
 
 % calculating the performance of QC for test input generation in our experiment II
 
-
 experiment2()->	
 	GridSizes  = [10,15,20,50],%lists:seq(15,15),
 	AgentsNums = [10,15,20],%lists:seq(5,20),

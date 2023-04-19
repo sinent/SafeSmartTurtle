@@ -14,13 +14,13 @@ def tryFindingSolution(pathGenObj, inputNum, generatedData):
 def incrementalRunExp():
 
     areaType = "Square" # "Circle"
-    areaSize = 2
-    conditionType =  "Count" # "Intersection" #  
-    # numIntersection = 1
+    areaSize = 1
+    conditionType =  "Intersection" # "Count" # 
+    numIntersection = 1
     densityDegree = 3
 
-    cs = (stringToAscii("IN"), (stringToAscii(areaType), areaSize), (stringToAscii(conditionType), densityDegree)) # count condition
-    # cs = (stringToAscii("IN"), (stringToAscii(areaType), areaSize), (stringToAscii(conditionType), numIntersection, densityDegree)) # intersection condition
+    # cs = (stringToAscii("IN"), (stringToAscii(areaType), areaSize), (stringToAscii(conditionType), densityDegree)) # count condition
+    cs = (stringToAscii("IN"), (stringToAscii(areaType), areaSize), (stringToAscii(conditionType), numIntersection, densityDegree)) # intersection condition
 
     gridSizes  = [10,15,20,50]#[5,7,10,12,15,17,20]#list ( range(5,6) )
     agentsNums = [10,15,20]#list ( range(5,21) )
@@ -30,9 +30,12 @@ def incrementalRunExp():
     repeats = 30
     timeoutSeconds = 60
 
-    TimesFolderName    = "Exp II - results{0}z3-py{0}GenTimes{0}IN {1} {2} {3} {4}{0}" .format(os.path.sep,areaType,areaSize,conditionType,densityDegree) # count condition
-    InputsFolderName   = "Exp II - results{0}z3-py{0}GenInputs{0}IN {1} {2} {3} {4}{0}".format(os.path.sep,areaType,areaSize,conditionType,densityDegree) # count condition
-    
+    # TimesFolderName    = "Exp II - results{0}z3-py{0}GenTimes{0}IN {1} {2} {3} {4}{0}" .format(os.path.sep,areaType,areaSize,conditionType,densityDegree) # count condition
+    # InputsFolderName   = "Exp II - results{0}z3-py{0}GenInputs{0}IN {1} {2} {3} {4}{0}".format(os.path.sep,areaType,areaSize,conditionType,densityDegree) # count condition
+
+    TimesFolderName    = "Exp II - results{0}time-out 60{0}python-z3{0}times{0}IN {1} {2} {3} {4} {5}{0}" .format(os.path.sep,areaType,areaSize,conditionType,numIntersection,densityDegree) # intersection condition
+    InputsFolderName   = "Exp II - results{0}time-out 60{0}python-z3{0}inputs{0}IN {1} {2} {3} {4} {5}{0}".format(os.path.sep,areaType,areaSize,conditionType,numIntersection,densityDegree) # intersection condition
+
     # TimesFolderName    = "Exp II - results{0}GenTimes{0}py-30 samples{0}IN {1} {2} {3} {4} {5}{0}" .format(os.path.sep,areaType,areaSize,conditionType,numIntersection,densityDegree) # intersection condition
     # InputsFolderName   = "Exp II - results{0}GenInputs{0}py-30 samples{0}IN {1} {2} {3} {4} {5}{0}".format(os.path.sep,areaType,areaSize,conditionType,numIntersection,densityDegree) # intersection condition
 
