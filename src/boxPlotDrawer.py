@@ -1,18 +1,26 @@
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
 #drawing box plots of different grid sizes in one figure 
+# run this with python3
 
 def getRawData(grid, filter, data):
-    filePath = "exp1-results/grid%d/%s/Raw/%s.txt" %(grid, filter, data)
+    filePath = "exp1-SUT3/G-%d-A-5-W-5-D-5-R-100-GenD--SUT-randFilterOrCorrect/%s/Raw/%s.txt" %(grid, filter, data)
     f = open(filePath, "r")
-    line = f.readline() # skipping the first line: '#turtle=X'
     ans = []
-    line = f.readline()
-    while len(line.split())>1:
-        ans.append(int(line.split()[1]))
+    if data == "Fault Detection Steps":
         line = f.readline()
+        while len(line.split())>0:
+            ans.append(int(line.split()[0]))
+            line = f.readline()
+    else:  
+        line = f.readline() # skipping the first line: '#turtle=X'
+        line = f.readline()
+        while len(line.split())>1:
+            ans.append(int(line.split()[1]))
+            line = f.readline()
     return ans
 
 def drawPlot(targetData, ylabelText):
@@ -30,14 +38,14 @@ def drawPlot(targetData, ylabelText):
     data_F2  =[]
     data_F3  =[]
 
-    grids = [10,20,50,100]
+    grids = [10,15,20,50]
     for g in grids:
         data_NoF.append( getRawData(g, "NoFilter", targetData) )
         data_F1.append(  getRawData(g, "F1", targetData) )
         data_F2.append(  getRawData(g, "F2", targetData) )
         data_F3.append(  getRawData(g, "F3", targetData) )
 
-    ticks = ['10*10', '20*20', '50*50', '100*100']
+    ticks = ['10*10', '15*15', '20*20', '50*50']
 
     plt.figure()
 
@@ -82,7 +90,9 @@ def drawPlot(targetData, ylabelText):
 
     plt.tight_layout()
 
-    plt.savefig("exp1-results/boxplots/"+targetData + ".pdf")
+    if(not os.path.isdir("exp1-SUT3/boxplots/")):
+        os.mkdir("exp1-SUT3/boxplots/")
+    plt.savefig("exp1-SUT3/boxplots/"+targetData + ".pdf")
 
 #******* notice **********
 # run this program in terminal
@@ -93,5 +103,6 @@ if __name__ == "__main__":
     drawPlot("Discards", "Number of test cases")
     drawPlot("ShrinkSteps"      , "Number of steps" )
     drawPlot("FailedShrinkSteps", "Number of steps" )
+    drawPlot("Fault Detection Steps", "Number of executed steps" )
 
 
