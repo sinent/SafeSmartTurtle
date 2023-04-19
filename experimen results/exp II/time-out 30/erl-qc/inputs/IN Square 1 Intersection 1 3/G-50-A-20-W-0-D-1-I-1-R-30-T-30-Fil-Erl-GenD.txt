@@ -1,0 +1,220 @@
+Repeat Index:1
+
+
+Time-out
+
+
+Repeat Index:2
+
+
+Time-out
+
+
+Repeat Index:3
+
+
+Time-out
+
+
+Repeat Index:4
+
+
+Time-out
+
+
+Repeat Index:5
+
+
+Time-out
+
+
+Repeat Index:6
+
+
+Time-out
+
+
+Repeat Index:7
+
+
+Time-out
+
+
+Repeat Index:8
+
+
+Time-out
+
+
+Repeat Index:9
+
+
+Time-out
+
+
+Repeat Index:10
+
+
+Test input:1
+AgentNum=  1; Start(19,25); Moves=down 
+AgentNum=  2; Start(44,25); Moves=down 
+AgentNum=  3; Start(13,41); Moves=left 
+AgentNum=  4; Start(36,42); Moves=left 
+AgentNum=  5; Start(37, 5); Moves=left 
+AgentNum=  6; Start(27,20); Moves=left 
+AgentNum=  7; Start( 9,45); Moves=right
+AgentNum=  8; Start(12,25); Moves=left 
+AgentNum=  9; Start( 9,34); Moves=down 
+AgentNum= 10; Start(10,48); Moves=right
+AgentNum= 11; Start(26,49); Moves=up   
+AgentNum= 12; Start(24,10); Moves=up   
+AgentNum= 13; Start( 2, 6); Moves=left 
+AgentNum= 14; Start(35,43); Moves=down 
+AgentNum= 15; Start( 9,35); Moves=down 
+AgentNum= 16; Start( 5,19); Moves=left 
+AgentNum= 17; Start(15,42); Moves=down 
+AgentNum= 18; Start(36,42); Moves=left 
+AgentNum= 19; Start(40,21); Moves=down 
+AgentNum= 20; Start(12,10); Moves=right
+
+
+Repeat Index:11
+
+
+Time-out
+
+
+Repeat Index:12
+
+
+Time-out
+
+
+Repeat Index:13
+
+
+Time-out
+
+
+Repeat Index:14
+
+
+Time-out
+
+
+Repeat Index:15
+
+
+Time-out
+
+
+Repeat Index:16
+
+
+Time-out
+
+
+Repeat Index:17
+
+
+Time-out
+
+
+Repeat Index:18
+
+
+Time-out
+
+
+Repeat Index:19
+
+
+Time-out
+
+
+Repeat Index:20
+
+
+Time-out
+
+
+Repeat Index:21
+
+
+Time-out
+
+
+Repeat Index:22
+
+
+Time-out
+
+
+Repeat Index:23
+
+
+Time-out
+
+
+Repeat Index:24
+
+
+Time-out
+
+
+Repeat Index:25
+
+
+Time-out
+
+
+Repeat Index:26
+
+
+Time-out
+
+
+Repeat Index:27
+
+
+Time-out
+
+
+Repeat Index:28
+
+
+Test input:1
+AgentNum=  1; Start(19,14); Moves=up   
+AgentNum=  2; Start( 5,39); Moves=down 
+AgentNum=  3; Start(18,44); Moves=right
+AgentNum=  4; Start(18,44); Moves=right
+AgentNum=  5; Start( 3, 5); Moves=up   
+AgentNum=  6; Start(11,19); Moves=left 
+AgentNum=  7; Start(32,31); Moves=down 
+AgentNum=  8; Start(30,22); Moves=left 
+AgentNum=  9; Start( 1,15); Moves=left 
+AgentNum= 10; Start(21,19); Moves=up   
+AgentNum= 11; Start(47,29); Moves=left 
+AgentNum= 12; Start( 9,30); Moves=down 
+AgentNum= 13; Start(28,32); Moves=left 
+AgentNum= 14; Start(33,16); Moves=left 
+AgentNum= 15; Start(19,45); Moves=down 
+AgentNum= 16; Start(18,28); Moves=up   
+AgentNum= 17; Start(40,13); Moves=right
+AgentNum= 18; Start(11,42); Moves=up   
+AgentNum= 19; Start(32,22); Moves=down 
+AgentNum= 20; Start(33,17); Moves=left 
+
+
+Repeat Index:29
+
+
+Time-out
+
+
+Repeat Index:30
+
+
+Time-out
+
+

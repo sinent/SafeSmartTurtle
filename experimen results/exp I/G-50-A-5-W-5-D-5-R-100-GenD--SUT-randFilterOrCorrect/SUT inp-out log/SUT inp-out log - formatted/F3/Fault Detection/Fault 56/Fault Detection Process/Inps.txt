@@ -1,0 +1,32 @@
+Detection Run 1
+Grid Size: (50,50)
+Turtle ID:1 - Start: (18,46) - Moves:left,right,left, - Faults:0,0,0,2,1,1,3,1,0,3,
+Turtle ID:2 - Start: (49,17) - Moves:left,down,down,left,down, - Faults:2,2,1,1,3,1,3,2,1,2,
+Turtle ID:3 - Start: (31,3) - Moves:right,right,right,up,up, - Faults:3,1,0,1,0,0,1,0,2,2,
+Turtle ID:4 - Start: (5,0) - Moves:left,left,left,left,up, - Faults:3,2,0,0,1,0,3,1,2,2,
+Turtle ID:5 - Start: (33,0) - Moves:up,up,left,left,up, - Faults:2,1,2,2,2,3,0,0,2,3,
+
+Detection Run 2
+Grid Size: (50,50)
+Turtle ID:1 - Start: (31,11) - Moves:right,right,right,up,right, - Faults:0,3,2,0,1,2,0,0,1,3,
+Turtle ID:2 - Start: (42,34) - Moves:left,left,left,left,left, - Faults:3,3,1,3,0,1,2,1,2,1,
+Turtle ID:3 - Start: (47,28) - Moves:down,left,down,down, - Faults:3,3,1,0,0,1,1,0,1,3,
+Turtle ID:4 - Start: (44,21) - Moves:left,left,up,up, - Faults:1,0,2,2,2,1,0,1,0,2,
+Turtle ID:5 - Start: (33,12) - Moves:right,up,right,up, - Faults:0,3,3,1,0,1,0,1,1,3,
+
+Detection Run 3
+Grid Size: (50,50)
+Turtle ID:1 - Start: (49,16) - Moves:up,nop,up,nop,up,right, - Faults:1,1,0,3,1,0,3,1,2,2,
+Turtle ID:2 - Start: (31,37) - Moves:up,up,left,up,up, - Faults:1,3,3,1,2,3,2,1,3,3,
+Turtle ID:3 - Start: (22,23) - Moves:up,up,nop,up,up,up, - Faults:2,2,2,3,0,2,0,3,2,0,
+Turtle ID:4 - Start: (23,28) - Moves:down,left, - Faults:0,2,1,0,1,0,1,0,0,2,
+Turtle ID:5 - Start: (22,35) - Moves:down,down,down,nop,right,right, - Faults:2,3,2,1,0,2,0,2,2,3,
+
+Fault Detection Run 4
+Grid Size: (50,50)
+Turtle ID:1 - Start: (11,47) - Moves:right,right,up,right,right, - Faults:2,0,2,1,1,0,3,2,2,2,
+Turtle ID:2 - Start: (8,34) - Moves:up,nop,up,nop,up,right,up, - Faults:0,3,0,0,2,1,0,1,3,0,
+Turtle ID:3 - Start: (32,38) - Moves:nop,down,left,nop,left, - Faults:2,2,0,3,0,0,3,2,1,0,
+Turtle ID:4 - Start: (9,37) - Moves:left,down,down,left,nop,nop,left, - Faults:1,2,0,1,1,2,0,3,0,1,
+Turtle ID:5 - Start: (40,3) - Moves:nop,left,left,left,left,nop,up, - Faults:1,2,2,0,2,0,0,3,3,1,
+

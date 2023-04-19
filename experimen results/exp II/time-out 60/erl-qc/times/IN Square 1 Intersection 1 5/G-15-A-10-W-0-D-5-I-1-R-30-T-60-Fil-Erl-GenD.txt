@@ -1,0 +1,37 @@
+All Times:
+Test Set  1:  60000
+Test Set  2:  60000
+Test Set  3:  60000
+Test Set  4:  60000
+Test Set  5:  60000
+Test Set  6:  60000
+Test Set  7:  10298
+Test Set  8:  60000
+Test Set  9:  25593
+Test Set 10:  30737
+Test Set 11:  60000
+Test Set 12:  36099
+Test Set 13:  60000
+Test Set 14:  60000
+Test Set 15:   7434
+Test Set 16:  60000
+Test Set 17:  51300
+Test Set 18:  60000
+Test Set 19:  49174
+Test Set 20:  52798
+Test Set 21:  60000
+Test Set 22:  47096
+Test Set 23:  60000
+Test Set 24:  60000
+Test Set 25:  60000
+Test Set 26:  41832
+Test Set 27:  60000
+Test Set 28:  60000
+Test Set 29:  60000
+Test Set 30:  60000
+
+Statistics:
+Total               :1552361
+Average             :  51745
+Average (no Min/Max):  53033
+Median              :  60000

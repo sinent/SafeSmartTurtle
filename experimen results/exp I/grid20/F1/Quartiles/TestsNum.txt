@@ -1,9 +1,0 @@
-                 #Turtle=5       
- Grid=20*20      1              
- Grid=20*20      5              
- Grid=20*20      15             
- Grid=20*20      15             
- Grid=20*20      15             
- Grid=20*20      26             
- Grid=20*20      79             
-

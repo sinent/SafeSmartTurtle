@@ -1,9 +1,0 @@
-All Times:
-Test Set  1:     82
-
-Statistics:
-Total               :     82
-Average             :     82
-Average (no Min/Max):    ---
-Median              :     82
-

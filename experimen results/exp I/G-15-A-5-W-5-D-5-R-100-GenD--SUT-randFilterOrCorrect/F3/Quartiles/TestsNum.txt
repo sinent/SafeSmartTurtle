@@ -1,0 +1,9 @@
+                 #Turtle=5       
+ Grid=15*15      1              
+ Grid=15*15      3              
+ Grid=15*15      6              
+ Grid=15*15      6              
+ Grid=15*15      6              
+ Grid=15*15      14             
+ Grid=15*15      47             
+

@@ -1,0 +1,361 @@
+Method,Constraint,GridSize,NumberOfAgents,PathLength,Time_Median,Time_Average
+erlang,IN Square 1 Intersection 1 3,10,10,1,0,0
+erlang,IN Square 1 Intersection 1 3,10,10,5,0,0
+erlang,IN Square 1 Intersection 1 3,10,10,10,0,0
+erlang,IN Square 1 Intersection 1 3,10,10,15,0,0
+erlang,IN Square 1 Intersection 1 3,10,10,20,0,0
+erlang,IN Square 1 Intersection 1 3,10,15,1,0,0
+erlang,IN Square 1 Intersection 1 3,10,15,5,0,0
+erlang,IN Square 1 Intersection 1 3,10,15,10,0,0
+erlang,IN Square 1 Intersection 1 3,10,15,15,0,0
+erlang,IN Square 1 Intersection 1 3,10,15,20,0,0
+erlang,IN Square 1 Intersection 1 3,10,20,1,0,0
+erlang,IN Square 1 Intersection 1 3,10,20,5,0,0
+erlang,IN Square 1 Intersection 1 3,10,20,10,0,0
+erlang,IN Square 1 Intersection 1 3,10,20,15,0,0
+erlang,IN Square 1 Intersection 1 3,10,20,20,0,0
+erlang,IN Square 1 Intersection 1 3,15,10,1,1,2
+erlang,IN Square 1 Intersection 1 3,15,10,5,0,0
+erlang,IN Square 1 Intersection 1 3,15,10,10,0,0
+erlang,IN Square 1 Intersection 1 3,15,10,15,0,0
+erlang,IN Square 1 Intersection 1 3,15,10,20,0,0
+erlang,IN Square 1 Intersection 1 3,15,15,1,1,1
+erlang,IN Square 1 Intersection 1 3,15,15,5,0,0
+erlang,IN Square 1 Intersection 1 3,15,15,10,0,0
+erlang,IN Square 1 Intersection 1 3,15,15,15,0,0
+erlang,IN Square 1 Intersection 1 3,15,15,20,0,0
+erlang,IN Square 1 Intersection 1 3,15,20,1,0,0
+erlang,IN Square 1 Intersection 1 3,15,20,5,0,0
+erlang,IN Square 1 Intersection 1 3,15,20,10,0,0
+erlang,IN Square 1 Intersection 1 3,15,20,15,0,0
+erlang,IN Square 1 Intersection 1 3,15,20,20,0,0
+erlang,IN Square 1 Intersection 1 3,20,10,1,6,8
+erlang,IN Square 1 Intersection 1 3,20,10,5,1,2
+erlang,IN Square 1 Intersection 1 3,20,10,10,0,1
+erlang,IN Square 1 Intersection 1 3,20,10,15,0,0
+erlang,IN Square 1 Intersection 1 3,20,10,20,0,0
+erlang,IN Square 1 Intersection 1 3,20,15,1,3,4
+erlang,IN Square 1 Intersection 1 3,20,15,5,1,1
+erlang,IN Square 1 Intersection 1 3,20,15,10,0,0
+erlang,IN Square 1 Intersection 1 3,20,15,15,0,0
+erlang,IN Square 1 Intersection 1 3,20,15,20,0,0
+erlang,IN Square 1 Intersection 1 3,20,20,1,2,2
+erlang,IN Square 1 Intersection 1 3,20,20,5,0,0
+erlang,IN Square 1 Intersection 1 3,20,20,10,0,0
+erlang,IN Square 1 Intersection 1 3,20,20,15,0,0
+erlang,IN Square 1 Intersection 1 3,20,20,20,0,0
+erlang,IN Square 1 Intersection 1 3,50,10,1,30,30
+erlang,IN Square 1 Intersection 1 3,50,10,5,30,28
+erlang,IN Square 1 Intersection 1 3,50,10,10,30,22
+erlang,IN Square 1 Intersection 1 3,50,10,15,17,18
+erlang,IN Square 1 Intersection 1 3,50,10,20,11,13
+erlang,IN Square 1 Intersection 1 3,50,15,1,30,30
+erlang,IN Square 1 Intersection 1 3,50,15,5,30,27
+erlang,IN Square 1 Intersection 1 3,50,15,10,30,21
+erlang,IN Square 1 Intersection 1 3,50,15,15,10,12
+erlang,IN Square 1 Intersection 1 3,50,15,20,7,9
+erlang,IN Square 1 Intersection 1 3,50,20,1,30,29
+erlang,IN Square 1 Intersection 1 3,50,20,5,24,20
+erlang,IN Square 1 Intersection 1 3,50,20,10,9,13
+erlang,IN Square 1 Intersection 1 3,50,20,15,8,9
+erlang,IN Square 1 Intersection 1 3,50,20,20,5,5
+erlang,IN Square 1 Intersection 1 5,10,10,1,30,28
+erlang,IN Square 1 Intersection 1 5,10,10,5,4,6
+erlang,IN Square 1 Intersection 1 5,10,10,10,1,2
+erlang,IN Square 1 Intersection 1 5,10,10,15,0,1
+erlang,IN Square 1 Intersection 1 5,10,10,20,0,1
+erlang,IN Square 1 Intersection 1 5,10,15,1,22,19
+erlang,IN Square 1 Intersection 1 5,10,15,5,1,1
+erlang,IN Square 1 Intersection 1 5,10,15,10,0,0
+erlang,IN Square 1 Intersection 1 5,10,15,15,0,0
+erlang,IN Square 1 Intersection 1 5,10,15,20,0,0
+erlang,IN Square 1 Intersection 1 5,10,20,1,6,8
+erlang,IN Square 1 Intersection 1 5,10,20,5,0,0
+erlang,IN Square 1 Intersection 1 5,10,20,10,0,0
+erlang,IN Square 1 Intersection 1 5,10,20,15,0,0
+erlang,IN Square 1 Intersection 1 5,10,20,20,0,0
+erlang,IN Square 1 Intersection 1 5,15,10,1,30,30
+erlang,IN Square 1 Intersection 1 5,15,10,5,30,29
+erlang,IN Square 1 Intersection 1 5,15,10,10,29,22
+erlang,IN Square 1 Intersection 1 5,15,10,15,11,11
+erlang,IN Square 1 Intersection 1 5,15,10,20,4,6
+erlang,IN Square 1 Intersection 1 5,15,15,1,30,30
+erlang,IN Square 1 Intersection 1 5,15,15,5,26,20
+erlang,IN Square 1 Intersection 1 5,15,15,10,3,3
+erlang,IN Square 1 Intersection 1 5,15,15,15,1,1
+erlang,IN Square 1 Intersection 1 5,15,15,20,1,1
+erlang,IN Square 1 Intersection 1 5,15,20,1,30,30
+erlang,IN Square 1 Intersection 1 5,15,20,5,9,10
+erlang,IN Square 1 Intersection 1 5,15,20,10,1,1
+erlang,IN Square 1 Intersection 1 5,15,20,15,1,1
+erlang,IN Square 1 Intersection 1 5,15,20,20,0,0
+erlang,IN Square 1 Intersection 1 5,20,10,1,30,30
+erlang,IN Square 1 Intersection 1 5,20,10,5,30,30
+erlang,IN Square 1 Intersection 1 5,20,10,10,30,29
+erlang,IN Square 1 Intersection 1 5,20,10,15,30,27
+erlang,IN Square 1 Intersection 1 5,20,10,20,30,21
+erlang,IN Square 1 Intersection 1 5,20,15,1,30,30
+erlang,IN Square 1 Intersection 1 5,20,15,5,30,29
+erlang,IN Square 1 Intersection 1 5,20,15,10,30,22
+erlang,IN Square 1 Intersection 1 5,20,15,15,10,13
+erlang,IN Square 1 Intersection 1 5,20,15,20,7,9
+erlang,IN Square 1 Intersection 1 5,20,20,1,30,30
+erlang,IN Square 1 Intersection 1 5,20,20,5,30,24
+erlang,IN Square 1 Intersection 1 5,20,20,10,14,13
+erlang,IN Square 1 Intersection 1 5,20,20,15,4,7
+erlang,IN Square 1 Intersection 1 5,20,20,20,2,2
+erlang,IN Square 1 Intersection 1 5,50,10,1,30,30
+erlang,IN Square 1 Intersection 1 5,50,10,5,30,30
+erlang,IN Square 1 Intersection 1 5,50,10,10,30,30
+erlang,IN Square 1 Intersection 1 5,50,10,15,30,30
+erlang,IN Square 1 Intersection 1 5,50,10,20,30,30
+erlang,IN Square 1 Intersection 1 5,50,15,1,30,30
+erlang,IN Square 1 Intersection 1 5,50,15,5,30,30
+erlang,IN Square 1 Intersection 1 5,50,15,10,30,30
+erlang,IN Square 1 Intersection 1 5,50,15,15,30,30
+erlang,IN Square 1 Intersection 1 5,50,15,20,30,30
+erlang,IN Square 1 Intersection 1 5,50,20,1,30,30
+erlang,IN Square 1 Intersection 1 5,50,20,5,30,30
+erlang,IN Square 1 Intersection 1 5,50,20,10,30,30
+erlang,IN Square 1 Intersection 1 5,50,20,15,30,30
+erlang,IN Square 1 Intersection 1 5,50,20,20,30,29
+erlang,IN Square 1 Intersection 1 8,10,10,1,30,30
+erlang,IN Square 1 Intersection 1 8,10,10,5,30,30
+erlang,IN Square 1 Intersection 1 8,10,10,10,30,30
+erlang,IN Square 1 Intersection 1 8,10,10,15,30,30
+erlang,IN Square 1 Intersection 1 8,10,10,20,30,30
+erlang,IN Square 1 Intersection 1 8,10,15,1,30,30
+erlang,IN Square 1 Intersection 1 8,10,15,5,30,30
+erlang,IN Square 1 Intersection 1 8,10,15,10,30,24
+erlang,IN Square 1 Intersection 1 8,10,15,15,30,25
+erlang,IN Square 1 Intersection 1 8,10,15,20,17,17
+erlang,IN Square 1 Intersection 1 8,10,20,1,30,30
+erlang,IN Square 1 Intersection 1 8,10,20,5,30,28
+erlang,IN Square 1 Intersection 1 8,10,20,10,15,17
+erlang,IN Square 1 Intersection 1 8,10,20,15,4,4
+erlang,IN Square 1 Intersection 1 8,10,20,20,2,2
+erlang,IN Square 1 Intersection 1 8,15,10,1,30,30
+erlang,IN Square 1 Intersection 1 8,15,10,5,30,30
+erlang,IN Square 1 Intersection 1 8,15,10,10,30,30
+erlang,IN Square 1 Intersection 1 8,15,10,15,30,30
+erlang,IN Square 1 Intersection 1 8,15,10,20,30,30
+erlang,IN Square 1 Intersection 1 8,15,15,1,30,30
+erlang,IN Square 1 Intersection 1 8,15,15,5,30,30
+erlang,IN Square 1 Intersection 1 8,15,15,10,30,30
+erlang,IN Square 1 Intersection 1 8,15,15,15,30,30
+erlang,IN Square 1 Intersection 1 8,15,15,20,30,30
+erlang,IN Square 1 Intersection 1 8,15,20,1,30,30
+erlang,IN Square 1 Intersection 1 8,15,20,5,30,30
+erlang,IN Square 1 Intersection 1 8,15,20,10,30,30
+erlang,IN Square 1 Intersection 1 8,15,20,15,30,28
+erlang,IN Square 1 Intersection 1 8,15,20,20,30,28
+erlang,IN Square 1 Intersection 1 8,20,10,1,30,30
+erlang,IN Square 1 Intersection 1 8,20,10,5,30,30
+erlang,IN Square 1 Intersection 1 8,20,10,10,30,30
+erlang,IN Square 1 Intersection 1 8,20,10,15,30,30
+erlang,IN Square 1 Intersection 1 8,20,10,20,30,30
+erlang,IN Square 1 Intersection 1 8,20,15,1,30,30
+erlang,IN Square 1 Intersection 1 8,20,15,5,30,30
+erlang,IN Square 1 Intersection 1 8,20,15,10,30,30
+erlang,IN Square 1 Intersection 1 8,20,15,15,30,30
+erlang,IN Square 1 Intersection 1 8,20,15,20,30,30
+erlang,IN Square 1 Intersection 1 8,20,20,1,30,30
+erlang,IN Square 1 Intersection 1 8,20,20,5,30,30
+erlang,IN Square 1 Intersection 1 8,20,20,10,30,30
+erlang,IN Square 1 Intersection 1 8,20,20,15,30,30
+erlang,IN Square 1 Intersection 1 8,20,20,20,30,30
+erlang,IN Square 1 Intersection 1 8,50,10,1,30,30
+erlang,IN Square 1 Intersection 1 8,50,10,5,30,30
+erlang,IN Square 1 Intersection 1 8,50,10,10,30,30
+erlang,IN Square 1 Intersection 1 8,50,10,15,30,30
+erlang,IN Square 1 Intersection 1 8,50,10,20,30,30
+erlang,IN Square 1 Intersection 1 8,50,15,1,30,30
+erlang,IN Square 1 Intersection 1 8,50,15,5,30,30
+erlang,IN Square 1 Intersection 1 8,50,15,10,30,30
+erlang,IN Square 1 Intersection 1 8,50,15,15,30,30
+erlang,IN Square 1 Intersection 1 8,50,15,20,30,30
+erlang,IN Square 1 Intersection 1 8,50,20,1,30,30
+erlang,IN Square 1 Intersection 1 8,50,20,5,30,30
+erlang,IN Square 1 Intersection 1 8,50,20,10,30,30
+erlang,IN Square 1 Intersection 1 8,50,20,15,30,30
+erlang,IN Square 1 Intersection 1 8,50,20,20,30,30
+erlang,IN Square 2 Count 3,10,10,1,0,0
+erlang,IN Square 2 Count 3,10,10,5,0,0
+erlang,IN Square 2 Count 3,10,10,10,0,0
+erlang,IN Square 2 Count 3,10,10,15,0,0
+erlang,IN Square 2 Count 3,10,10,20,0,0
+erlang,IN Square 2 Count 3,10,15,1,0,0
+erlang,IN Square 2 Count 3,10,15,5,0,0
+erlang,IN Square 2 Count 3,10,15,10,0,0
+erlang,IN Square 2 Count 3,10,15,15,0,0
+erlang,IN Square 2 Count 3,10,15,20,0,0
+erlang,IN Square 2 Count 3,10,20,1,0,0
+erlang,IN Square 2 Count 3,10,20,5,0,0
+erlang,IN Square 2 Count 3,10,20,10,0,0
+erlang,IN Square 2 Count 3,10,20,15,0,0
+erlang,IN Square 2 Count 3,10,20,20,0,0
+erlang,IN Square 2 Count 3,15,10,1,0,0
+erlang,IN Square 2 Count 3,15,10,5,0,0
+erlang,IN Square 2 Count 3,15,10,10,0,0
+erlang,IN Square 2 Count 3,15,10,15,0,0
+erlang,IN Square 2 Count 3,15,10,20,0,0
+erlang,IN Square 2 Count 3,15,15,1,0,0
+erlang,IN Square 2 Count 3,15,15,5,0,0
+erlang,IN Square 2 Count 3,15,15,10,0,0
+erlang,IN Square 2 Count 3,15,15,15,0,0
+erlang,IN Square 2 Count 3,15,15,20,0,0
+erlang,IN Square 2 Count 3,15,20,1,0,0
+erlang,IN Square 2 Count 3,15,20,5,0,0
+erlang,IN Square 2 Count 3,15,20,10,0,0
+erlang,IN Square 2 Count 3,15,20,15,0,0
+erlang,IN Square 2 Count 3,15,20,20,0,0
+erlang,IN Square 2 Count 3,20,10,1,0,0
+erlang,IN Square 2 Count 3,20,10,5,0,0
+erlang,IN Square 2 Count 3,20,10,10,0,0
+erlang,IN Square 2 Count 3,20,10,15,0,0
+erlang,IN Square 2 Count 3,20,10,20,0,0
+erlang,IN Square 2 Count 3,20,15,1,0,0
+erlang,IN Square 2 Count 3,20,15,5,0,0
+erlang,IN Square 2 Count 3,20,15,10,0,0
+erlang,IN Square 2 Count 3,20,15,15,0,0
+erlang,IN Square 2 Count 3,20,15,20,0,0
+erlang,IN Square 2 Count 3,20,20,1,0,0
+erlang,IN Square 2 Count 3,20,20,5,0,0
+erlang,IN Square 2 Count 3,20,20,10,0,0
+erlang,IN Square 2 Count 3,20,20,15,0,0
+erlang,IN Square 2 Count 3,20,20,20,0,0
+erlang,IN Square 2 Count 3,50,10,1,11,14
+erlang,IN Square 2 Count 3,50,10,5,17,18
+erlang,IN Square 2 Count 3,50,10,10,14,16
+erlang,IN Square 2 Count 3,50,10,15,14,16
+erlang,IN Square 2 Count 3,50,10,20,28,21
+erlang,IN Square 2 Count 3,50,15,1,5,6
+erlang,IN Square 2 Count 3,50,15,5,5,7
+erlang,IN Square 2 Count 3,50,15,10,10,12
+erlang,IN Square 2 Count 3,50,15,15,8,10
+erlang,IN Square 2 Count 3,50,15,20,8,9
+erlang,IN Square 2 Count 3,50,20,1,2,3
+erlang,IN Square 2 Count 3,50,20,5,2,6
+erlang,IN Square 2 Count 3,50,20,10,4,6
+erlang,IN Square 2 Count 3,50,20,15,6,6
+erlang,IN Square 2 Count 3,50,20,20,6,8
+erlang,IN Square 2 Count 5,10,10,1,0,0
+erlang,IN Square 2 Count 5,10,10,5,0,0
+erlang,IN Square 2 Count 5,10,10,10,0,0
+erlang,IN Square 2 Count 5,10,10,15,0,0
+erlang,IN Square 2 Count 5,10,10,20,0,0
+erlang,IN Square 2 Count 5,10,15,1,0,0
+erlang,IN Square 2 Count 5,10,15,5,0,0
+erlang,IN Square 2 Count 5,10,15,10,0,0
+erlang,IN Square 2 Count 5,10,15,15,0,0
+erlang,IN Square 2 Count 5,10,15,20,0,0
+erlang,IN Square 2 Count 5,10,20,1,0,0
+erlang,IN Square 2 Count 5,10,20,5,0,0
+erlang,IN Square 2 Count 5,10,20,10,0,0
+erlang,IN Square 2 Count 5,10,20,15,0,0
+erlang,IN Square 2 Count 5,10,20,20,0,0
+erlang,IN Square 2 Count 5,15,10,1,2,2
+erlang,IN Square 2 Count 5,15,10,5,3,5
+erlang,IN Square 2 Count 5,15,10,10,3,4
+erlang,IN Square 2 Count 5,15,10,15,3,5
+erlang,IN Square 2 Count 5,15,10,20,2,3
+erlang,IN Square 2 Count 5,15,15,1,0,1
+erlang,IN Square 2 Count 5,15,15,5,0,1
+erlang,IN Square 2 Count 5,15,15,10,1,1
+erlang,IN Square 2 Count 5,15,15,15,1,1
+erlang,IN Square 2 Count 5,15,15,20,1,1
+erlang,IN Square 2 Count 5,15,20,1,0,0
+erlang,IN Square 2 Count 5,15,20,5,0,0
+erlang,IN Square 2 Count 5,15,20,10,0,0
+erlang,IN Square 2 Count 5,15,20,15,0,0
+erlang,IN Square 2 Count 5,15,20,20,0,0
+erlang,IN Square 2 Count 5,20,10,1,30,21
+erlang,IN Square 2 Count 5,20,10,5,30,23
+erlang,IN Square 2 Count 5,20,10,10,30,25
+erlang,IN Square 2 Count 5,20,10,15,30,22
+erlang,IN Square 2 Count 5,20,10,20,27,21
+erlang,IN Square 2 Count 5,20,15,1,4,7
+erlang,IN Square 2 Count 5,20,15,5,6,9
+erlang,IN Square 2 Count 5,20,15,10,6,9
+erlang,IN Square 2 Count 5,20,15,15,7,10
+erlang,IN Square 2 Count 5,20,15,20,4,6
+erlang,IN Square 2 Count 5,20,20,1,2,2
+erlang,IN Square 2 Count 5,20,20,5,2,3
+erlang,IN Square 2 Count 5,20,20,10,2,3
+erlang,IN Square 2 Count 5,20,20,15,2,3
+erlang,IN Square 2 Count 5,20,20,20,3,3
+erlang,IN Square 2 Count 5,50,10,1,30,30
+erlang,IN Square 2 Count 5,50,10,5,30,30
+erlang,IN Square 2 Count 5,50,10,10,30,30
+erlang,IN Square 2 Count 5,50,10,15,30,30
+erlang,IN Square 2 Count 5,50,10,20,30,30
+erlang,IN Square 2 Count 5,50,15,1,30,30
+erlang,IN Square 2 Count 5,50,15,5,30,30
+erlang,IN Square 2 Count 5,50,15,10,30,30
+erlang,IN Square 2 Count 5,50,15,15,30,30
+erlang,IN Square 2 Count 5,50,15,20,30,30
+erlang,IN Square 2 Count 5,50,20,1,30,30
+erlang,IN Square 2 Count 5,50,20,5,30,30
+erlang,IN Square 2 Count 5,50,20,10,30,30
+erlang,IN Square 2 Count 5,50,20,15,30,30
+erlang,IN Square 2 Count 5,50,20,20,30,30
+erlang,IN Square 2 Count 8,10,10,1,30,28
+erlang,IN Square 2 Count 8,10,10,5,30,30
+erlang,IN Square 2 Count 8,10,10,10,30,30
+erlang,IN Square 2 Count 8,10,10,15,30,29
+erlang,IN Square 2 Count 8,10,10,20,30,28
+erlang,IN Square 2 Count 8,10,15,1,5,7
+erlang,IN Square 2 Count 8,10,15,5,10,12
+erlang,IN Square 2 Count 8,10,15,10,6,10
+erlang,IN Square 2 Count 8,10,15,15,5,6
+erlang,IN Square 2 Count 8,10,15,20,2,4
+erlang,IN Square 2 Count 8,10,20,1,1,1
+erlang,IN Square 2 Count 8,10,20,5,1,1
+erlang,IN Square 2 Count 8,10,20,10,1,2
+erlang,IN Square 2 Count 8,10,20,15,1,1
+erlang,IN Square 2 Count 8,10,20,20,1,1
+erlang,IN Square 2 Count 8,15,10,1,30,30
+erlang,IN Square 2 Count 8,15,10,5,30,30
+erlang,IN Square 2 Count 8,15,10,10,30,30
+erlang,IN Square 2 Count 8,15,10,15,30,30
+erlang,IN Square 2 Count 8,15,10,20,30,30
+erlang,IN Square 2 Count 8,15,15,1,30,30
+erlang,IN Square 2 Count 8,15,15,5,30,30
+erlang,IN Square 2 Count 8,15,15,10,30,30
+erlang,IN Square 2 Count 8,15,15,15,30,30
+erlang,IN Square 2 Count 8,15,15,20,30,25
+erlang,IN Square 2 Count 8,15,20,1,30,27
+erlang,IN Square 2 Count 8,15,20,5,30,28
+erlang,IN Square 2 Count 8,15,20,10,30,29
+erlang,IN Square 2 Count 8,15,20,15,30,24
+erlang,IN Square 2 Count 8,15,20,20,13,17
+erlang,IN Square 2 Count 8,20,10,1,30,30
+erlang,IN Square 2 Count 8,20,10,5,30,30
+erlang,IN Square 2 Count 8,20,10,10,30,30
+erlang,IN Square 2 Count 8,20,10,15,30,30
+erlang,IN Square 2 Count 8,20,10,20,30,30
+erlang,IN Square 2 Count 8,20,15,1,30,30
+erlang,IN Square 2 Count 8,20,15,5,30,30
+erlang,IN Square 2 Count 8,20,15,10,30,30
+erlang,IN Square 2 Count 8,20,15,15,30,30
+erlang,IN Square 2 Count 8,20,15,20,30,30
+erlang,IN Square 2 Count 8,20,20,1,30,30
+erlang,IN Square 2 Count 8,20,20,5,30,30
+erlang,IN Square 2 Count 8,20,20,10,30,30
+erlang,IN Square 2 Count 8,20,20,15,30,30
+erlang,IN Square 2 Count 8,20,20,20,30,30
+erlang,IN Square 2 Count 8,50,10,1,30,30
+erlang,IN Square 2 Count 8,50,10,5,30,30
+erlang,IN Square 2 Count 8,50,10,10,30,30
+erlang,IN Square 2 Count 8,50,10,15,30,30
+erlang,IN Square 2 Count 8,50,10,20,30,30
+erlang,IN Square 2 Count 8,50,15,1,30,30
+erlang,IN Square 2 Count 8,50,15,5,30,30
+erlang,IN Square 2 Count 8,50,15,10,30,30
+erlang,IN Square 2 Count 8,50,15,15,30,30
+erlang,IN Square 2 Count 8,50,15,20,30,30
+erlang,IN Square 2 Count 8,50,20,1,30,30
+erlang,IN Square 2 Count 8,50,20,5,30,30
+erlang,IN Square 2 Count 8,50,20,10,30,30
+erlang,IN Square 2 Count 8,50,20,15,30,30
+erlang,IN Square 2 Count 8,50,20,20,30,30

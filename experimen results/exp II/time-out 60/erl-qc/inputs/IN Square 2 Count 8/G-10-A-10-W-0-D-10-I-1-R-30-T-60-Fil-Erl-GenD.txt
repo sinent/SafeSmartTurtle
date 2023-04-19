@@ -1,0 +1,220 @@
+Repeat Index:1
+
+
+Time-out
+
+
+Repeat Index:2
+
+
+Time-out
+
+
+Repeat Index:3
+
+
+Test input:1
+AgentNum=  1; Start( 6, 2); Moves=up   ,up   ,right,up   ,up   ,up   ,up   ,up   ,left ,up   
+AgentNum=  2; Start( 6, 4); Moves=down ,down ,down ,left ,down ,left ,left ,left ,left ,left 
+AgentNum=  3; Start( 7, 3); Moves=left ,left ,left ,left ,down ,down ,down ,left ,left ,left 
+AgentNum=  4; Start( 6, 3); Moves=right,up   ,up   ,up   ,right,down ,right,right,nop  ,nop  
+AgentNum=  5; Start( 7, 2); Moves=left ,left ,down ,left ,left ,left ,down ,left ,left ,nop  
+AgentNum=  6; Start( 8, 7); Moves=down ,down ,down ,down ,right,right,nop  ,nop  ,nop  ,nop  
+AgentNum=  7; Start( 4, 1); Moves=up   ,right,up   ,down ,down ,down ,right,right,right,nop  
+AgentNum=  8; Start( 7, 0); Moves=up   ,up   ,down ,right,right,right,left ,down ,right,nop  
+AgentNum=  9; Start( 7, 4); Moves=left ,left ,left ,right,left ,left ,up   ,left ,left ,up   
+AgentNum= 10; Start( 5, 6); Moves=left ,left ,up   ,left ,left ,left ,nop  ,nop  ,nop  ,nop  
+
+
+Repeat Index:4
+
+
+Time-out
+
+
+Repeat Index:5
+
+
+Time-out
+
+
+Repeat Index:6
+
+
+Time-out
+
+
+Repeat Index:7
+
+
+Time-out
+
+
+Repeat Index:8
+
+
+Time-out
+
+
+Repeat Index:9
+
+
+Time-out
+
+
+Repeat Index:10
+
+
+Time-out
+
+
+Repeat Index:11
+
+
+Time-out
+
+
+Repeat Index:12
+
+
+Time-out
+
+
+Repeat Index:13
+
+
+Time-out
+
+
+Repeat Index:14
+
+
+Time-out
+
+
+Repeat Index:15
+
+
+Time-out
+
+
+Repeat Index:16
+
+
+Test input:1
+AgentNum=  1; Start( 3, 5); Moves=right,up   ,right,right,right,up   ,right,right,up   ,up   
+AgentNum=  2; Start( 4, 3); Moves=up   ,right,right,right,left ,right,up   ,up   ,nop  ,nop  
+AgentNum=  3; Start( 5, 7); Moves=down ,down ,down ,right,down ,down ,right,right,down ,down 
+AgentNum=  4; Start( 5, 7); Moves=right,up   ,down ,down ,up   ,right,down ,right,right,right
+AgentNum=  5; Start( 6, 4); Moves=up   ,left ,left ,right,left ,left ,left ,left ,left ,nop  
+AgentNum=  6; Start( 7, 6); Moves=left ,left ,left ,down ,left ,left ,down ,left ,left ,nop  
+AgentNum=  7; Start( 5, 5); Moves=right,up   ,right,right,right,up   ,up   ,right,up   ,up   
+AgentNum=  8; Start( 5, 4); Moves=left ,down ,down ,down ,left ,left ,left ,down ,left ,nop  
+AgentNum=  9; Start( 4, 6); Moves=up   ,down ,down ,up   ,left ,nop  ,nop  ,nop  ,nop  ,nop  
+AgentNum= 10; Start( 5, 6); Moves=right,right,right,up   ,up   ,up   ,right,up   ,right,nop  
+
+
+Repeat Index:17
+
+
+Time-out
+
+
+Repeat Index:18
+
+
+Time-out
+
+
+Repeat Index:19
+
+
+Time-out
+
+
+Repeat Index:20
+
+
+Test input:1
+AgentNum=  1; Start( 2, 4); Moves=down ,left ,down ,down ,up   ,down ,left ,down ,right,left 
+AgentNum=  2; Start( 7, 0); Moves=down ,up   ,up   ,up   ,right,up   ,up   ,up   ,left ,up   
+AgentNum=  3; Start( 2, 2); Moves=left ,left ,nop  ,nop  ,nop  ,nop  ,nop  ,nop  ,nop  ,nop  
+AgentNum=  4; Start( 3, 1); Moves=left ,left ,right,right,left ,left ,left ,nop  ,nop  ,nop  
+AgentNum=  5; Start( 9, 0); Moves=left ,left ,left ,left ,left ,left ,left ,left ,left ,nop  
+AgentNum=  6; Start( 2, 3); Moves=down ,down ,left ,left ,down ,nop  ,nop  ,nop  ,nop  ,nop  
+AgentNum=  7; Start( 1, 5); Moves=down ,down ,down ,down ,left ,down ,nop  ,nop  ,nop  ,nop  
+AgentNum=  8; Start( 5, 8); Moves=left ,down ,down ,down ,down ,down ,left ,down ,down ,left 
+AgentNum=  9; Start( 3, 5); Moves=up   ,up   ,right,up   ,right,right,right,right,up   ,up   
+AgentNum= 10; Start( 1, 6); Moves=down ,right,right,left ,left ,down ,down ,down ,left ,nop  
+
+
+Repeat Index:21
+
+
+Time-out
+
+
+Repeat Index:22
+
+
+Time-out
+
+
+Repeat Index:23
+
+
+Time-out
+
+
+Repeat Index:24
+
+
+Time-out
+
+
+Repeat Index:25
+
+
+Time-out
+
+
+Repeat Index:26
+
+
+Time-out
+
+
+Repeat Index:27
+
+
+Test input:1
+AgentNum=  1; Start( 0, 7); Moves=up   ,up   ,up   ,nop  ,nop  ,nop  ,nop  ,nop  ,nop  ,nop  
+AgentNum=  2; Start( 0, 7); Moves=up   ,nop  ,nop  ,nop  ,nop  ,nop  ,nop  ,nop  ,nop  ,nop  
+AgentNum=  3; Start( 1, 7); Moves=left ,up   ,up   ,up   ,nop  ,nop  ,nop  ,nop  ,nop  ,nop  
+AgentNum=  4; Start( 2, 3); Moves=up   ,left ,up   ,up   ,up   ,up   ,up   ,left ,up   ,nop  
+AgentNum=  5; Start( 6, 8); Moves=up   ,left ,left ,left ,left ,left ,up   ,nop  ,nop  ,nop  
+AgentNum=  6; Start( 5, 6); Moves=left ,up   ,left ,left ,left ,left ,up   ,up   ,up   ,nop  
+AgentNum=  7; Start( 3, 8); Moves=right,left ,up   ,left ,up   ,left ,left ,nop  ,nop  ,nop  
+AgentNum=  8; Start( 9, 3); Moves=up   ,up   ,up   ,up   ,right,up   ,up   ,down ,up   ,nop  
+AgentNum=  9; Start( 2, 5); Moves=up   ,up   ,left ,left ,up   ,up   ,up   ,nop  ,nop  ,nop  
+AgentNum= 10; Start( 4, 7); Moves=up   ,right,right,right,right,right,up   ,up   ,right,nop  
+
+
+Repeat Index:28
+
+
+Time-out
+
+
+Repeat Index:29
+
+
+Time-out
+
+
+Repeat Index:30
+
+
+Time-out
+
+

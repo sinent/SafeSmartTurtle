@@ -1,0 +1,1 @@
+Test execution took 1.05 minutes.

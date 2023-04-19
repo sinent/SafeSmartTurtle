@@ -1,0 +1,37 @@
+All Times:
+Test Set  1:    353
+Test Set  2:   2019
+Test Set  3:    484
+Test Set  4:    994
+Test Set  5:    351
+Test Set  6:    523
+Test Set  7:    485
+Test Set  8:    499
+Test Set  9:    491
+Test Set 10:    607
+Test Set 11:     13
+Test Set 12:    486
+Test Set 13:    362
+Test Set 14:     20
+Test Set 15:      7
+Test Set 16:     41
+Test Set 17:    327
+Test Set 18:     13
+Test Set 19:   2170
+Test Set 20:    345
+Test Set 21:   2404
+Test Set 22:     20
+Test Set 23:    214
+Test Set 24:   1261
+Test Set 25:    472
+Test Set 26:   1424
+Test Set 27:    504
+Test Set 28:    365
+Test Set 29:     16
+Test Set 30:   1435
+
+Statistics:
+Total               :  18705
+Average             :    623
+Average (no Min/Max):    581
+Median              :    478

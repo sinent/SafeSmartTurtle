@@ -1,0 +1,200 @@
+Repeat Index:1
+
+
+Time-out
+
+
+Repeat Index:2
+
+
+Time-out
+
+
+Repeat Index:3
+
+
+Time-out
+
+
+Repeat Index:4
+
+
+Time-out
+
+
+Repeat Index:5
+
+
+Time-out
+
+
+Repeat Index:6
+
+
+Time-out
+
+
+Repeat Index:7
+
+
+Time-out
+
+
+Repeat Index:8
+
+
+Time-out
+
+
+Repeat Index:9
+
+
+Time-out
+
+
+Repeat Index:10
+
+
+Time-out
+
+
+Repeat Index:11
+
+
+Time-out
+
+
+Repeat Index:12
+
+
+Time-out
+
+
+Repeat Index:13
+
+
+Time-out
+
+
+Repeat Index:14
+
+
+Time-out
+
+
+Repeat Index:15
+
+
+Time-out
+
+
+Repeat Index:16
+
+
+Time-out
+
+
+Repeat Index:17
+
+
+Time-out
+
+
+Repeat Index:18
+
+
+Time-out
+
+
+Repeat Index:19
+
+
+Time-out
+
+
+Repeat Index:20
+
+
+Time-out
+
+
+Repeat Index:21
+
+
+Time-out
+
+
+Repeat Index:22
+
+
+Time-out
+
+
+Repeat Index:23
+
+
+Time-out
+
+
+Repeat Index:24
+
+
+Test input:1
+AgentNum=  1; Start( 5,13); Moves=up   
+AgentNum=  2; Start(13, 9); Moves=up   
+AgentNum=  3; Start( 6,11); Moves=down 
+AgentNum=  4; Start(11, 1); Moves=down 
+AgentNum=  5; Start(11,13); Moves=up   
+AgentNum=  6; Start( 3,14); Moves=left 
+AgentNum=  7; Start( 3,14); Moves=down 
+AgentNum=  8; Start(14, 8); Moves=up   
+AgentNum=  9; Start( 0,12); Moves=up   
+AgentNum= 10; Start( 6, 6); Moves=right
+AgentNum= 11; Start(14, 5); Moves=right
+AgentNum= 12; Start( 3,13); Moves=up   
+AgentNum= 13; Start( 7,14); Moves=right
+AgentNum= 14; Start( 4, 1); Moves=up   
+AgentNum= 15; Start( 2, 0); Moves=right
+AgentNum= 16; Start(10, 2); Moves=left 
+AgentNum= 17; Start(11,13); Moves=right
+AgentNum= 18; Start( 4,14); Moves=left 
+AgentNum= 19; Start( 3,14); Moves=up   
+AgentNum= 20; Start( 5, 9); Moves=left 
+
+
+Repeat Index:25
+
+
+Time-out
+
+
+Repeat Index:26
+
+
+Time-out
+
+
+Repeat Index:27
+
+
+Time-out
+
+
+Repeat Index:28
+
+
+Time-out
+
+
+Repeat Index:29
+
+
+Time-out
+
+
+Repeat Index:30
+
+
+Time-out
+
+
